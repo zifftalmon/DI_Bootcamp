@@ -29,6 +29,10 @@
             i {
                 padding: 10px;
             }
+            h1 {
+                margin-left: 70px;
+                font-weight: bold;
+            }
             .dropdown {
                 width: 10%;
                 border: none;
@@ -63,8 +67,18 @@
             .dropdown:hover .dropdown-content {
                 display: block;
             }
+
+            img {
+                display: block;
+                padding: 150px;
+                margin: auto auto;
+                justify-content: center;
+                width: 600px;
+                height: 800px;
+                border-radius: 20%;
+            }
             .footer-div {
-            position: fixed;
+            position: sticky;
             bottom: 0;
             left: 0;
             display: flex;
@@ -77,7 +91,6 @@
             .footer-div > p {
                 text-align: center;
                 width: 33%;
-                background-color: #A8A7AB;
             }
         </style>
     </head>
@@ -85,16 +98,21 @@
         <nav>
             <div id="navbar">
                 <i class="fa-solid fa-vest-patches fa-3x"></i>
+                <h1>Clothes for the People</h1>
                 <div class="dropdown">
                     <button class="dropbtn">Menu</button>
                     <div class="dropdown-content">
-                        <a>Products</a>
+                        <a href="file:///C:/Users/Ziv/Documents/coding%20files/DI_Bootcamp/Week1/Day2/index.html" target="_self">Home</a>
+                        <a href="file:///C:/Users/Ziv/Documents/coding%20files/DI_Bootcamp/Week1/Day2/products.html" target="_self">Products</a>
                         <a>Signup</a>
                         <a>Login</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="img-div">
+        <img src="57443822-f867-4a63-bee2-4d4c988dfd7d.jfif" alt="outfit">
+        </div>
         <footer>
             <div class="footer-div">
             <p>Ziv Talmon &copy; 2022</p>
