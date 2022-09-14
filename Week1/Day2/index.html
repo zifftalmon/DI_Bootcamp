@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/38f45ab011.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <title>Shopping Website</title>
+        <style>
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+            body {
+                margin: 0;
+            }
+            #navbar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 12%;
+                display: flex;
+                justify-content: space-between;
+                background-color: #A8A7AB;
+            
+            }
+            i {
+                padding: 10px;
+            }
+            .dropdown {
+                width: 10%;
+                border: none;
+                background-color: #005D77;
+                position: relative;
+                display: inline-block;
+                
+            }
+            .dropbtn {
+                background-color: #005D77;
+                width: 100%;
+                border: none;
+                font-size: 30px;
+                height: 10px;
+                color:#A8A7AB;
+                font-weight: bold;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #7FD1AE;
+                min-width: 160px;
+                margin-top: 29.5px;
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 10px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .footer-div {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 70px;
+            margin: 0px;
+            }
+            .footer-div > p {
+                text-align: center;
+                width: 33%;
+                background-color: #A8A7AB;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div id="navbar">
+                <i class="fa-solid fa-vest-patches fa-3x"></i>
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a>Products</a>
+                        <a>Signup</a>
+                        <a>Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <footer>
+            <div class="footer-div">
+            <p>Ziv Talmon &copy; 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>
