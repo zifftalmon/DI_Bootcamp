@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #A8A7AB;
+    z-index:9999;
 
 }
 i {
@@ -57,15 +58,29 @@ h1 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+h2 {
+    text-align: center;
+    margin-top: 100px;
+}
 img {
     display: block;
-    padding: 150px;
+    padding: 20px;
     margin: auto auto;
     justify-content: center;
     width: 600px;
     height: 800px;
-    border-radius: 20%;
+    border-radius: 10%;
+}
+.img-div {
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 .footer-div {
 position: sticky;
