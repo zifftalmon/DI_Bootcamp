@@ -12,6 +12,7 @@
               font-family:'poppins', sans-serif;  
             }
             body {
+                background-color: #FFE4E5;
                 margin: 0;
             }
             #navbar {
@@ -30,6 +31,9 @@
             h1 {
                 margin-left: 70px;
                 font-weight: bold;
+            }
+            #products {
+                margin-top: 10%;
             }
             .dropdown {
                 width: 10%;
@@ -73,50 +77,61 @@
                 margin-top: 60px;
             }
             .product-div {
+
                 margin: 10px;
-                border: 3px solid red;
                 width: 200px;
                 height: 350px;
-                background-color: white;
             }
             .clothes-div-jeans {
                 background-color: black;
-                border: 3px solid red;
                 height: 70%;
                 background-image: url(fd66e884-a94e-43ee-b626-3643f608dd71.jfif);
                 background-size: cover;
                 background-repeat: no-repeat;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
             }
             .clothes-div-sweater {
                 background-color: black;
-                border: 3px solid red;
                 height: 70%;
                 background-image: url(c46372c8-e87d-424f-8cf9-7505e72c75a4.jfif);
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: left 0px top -30px;   
+                background-position: left 0px top -30px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;   
             }
             .clothes-div-jacket {
                 background-color: black;
-                border: 3px solid red;
                 height: 70%;
                 background-image: url(55a4fcd5-bd7c-4e3b-9333-c0e6a0325ca3.jfif);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: left 0px bottom -40px;   
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
             }
             .clothes-div-buttondown {
                 background-color: black;
-                border: 3px solid red;
                 height: 70%;
                 background-image: url(b62a90bd-250f-4618-803e-5b7aa6cd3b69.jfif);
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: left 0px bottom -70px;   
+                background-position: left 0px bottom -50px;  
+                border: none;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px; 
             }
             .price-div {
-                background-color: rgb(148, 143, 143);
+                background-color: #948f8f;
                 height: 28%;
+                text-align: center;
+                position: relative;
+                bottom: 16px;
+                font-weight: bold;
+                border: none;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
             }
             .purchase {
 
@@ -156,30 +171,42 @@
             </div>
         </nav>
 
-        <h1>hellow r</h1>
+        
         <div id="products">
         <div class="container">
         <div class="product-div">
         <div class="clothes-div-jeans"></div>
         <div class="price-div">
+            <p>Blue Short Levi's Jeans<br>
+                $10.99 <s>$20.00</s>
+            </p>
             <button class="purchase">Purchase Now!</button>
         </div>
         </div>
         <div class="product-div">
         <div class="clothes-div-sweater"></div>
         <div class="price-div">
+            <p>Feiyue &copy; Sneakers<br>
+                $15.00 <s>$25.00</s>
+            </p>
             <button class="purchase">Purchase Now!</button>
         </div>
         </div>
         <div class="product-div">
         <div class="clothes-div-jacket"></div>
         <div class="price-div">
+            <p>Silk Jacket<br>
+                $20.00 <s>30.00</s>
+            </p>
             <button class="purchase">Purchase Now!</button>
         </div>
         </div>
         <div class="product-div">
         <div class="clothes-div-buttondown"></div>
         <div class="price-div">
+            <p>Levi's Long-sleeved Shirt<br>
+                $07.00 <s>$10.00</s>
+            </p>
             <button class="purchase">Purchase Now!</button>
         </div>
         </div>
