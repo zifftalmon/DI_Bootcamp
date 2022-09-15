@@ -1,0 +1,143 @@
+* {
+    font-family:'poppins', sans-serif;  
+  }
+  body {
+      background-color: #FFE4E5;
+      margin: 0;
+  }
+  #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 12%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #A8A7AB;
+  }
+  i {
+      padding: 10px;
+  }
+  
+  h1 {
+      margin-left: 70px;
+      font-weight: bold;
+  }
+  #products {
+      margin-top: 10%;
+  }
+  .dropdown {
+      width: 10%;
+      border: none;
+      background-color: #005D77;
+      position: relative;
+      display: inline-block;
+      
+  }
+  .dropbtn {
+      background-color: #005D77;
+      width: 100%;
+      border: none;
+      font-size: 30px;
+      height: 10px;
+      color:#A8A7AB;
+      font-weight: bold;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #7FD1AE;
+      min-width: 160px;
+      margin-top: 29.5px;
+      z-index: 1;
+  }
+  .dropdown-content a {
+      color: black;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width:100%;
+      margin-top: 60px;
+  }
+  .product-div {
+
+      margin: 10px;
+      width: 200px;
+      height: 350px;
+  }
+  .clothes-div-jeans {
+      background-color: black;
+      height: 70%;
+      background-image: url(fd66e884-a94e-43ee-b626-3643f608dd71.jfif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+  }
+  .clothes-div-sweater {
+      background-color: black;
+      height: 70%;
+      background-image: url(c46372c8-e87d-424f-8cf9-7505e72c75a4.jfif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left 0px top -30px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;   
+  }
+  .clothes-div-jacket {
+      background-color: black;
+      height: 70%;
+      background-image: url(55a4fcd5-bd7c-4e3b-9333-c0e6a0325ca3.jfif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left 0px bottom -40px;   
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+  }
+  .clothes-div-buttondown {
+      background-color: black;
+      height: 70%;
+      background-image: url(b62a90bd-250f-4618-803e-5b7aa6cd3b69.jfif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left 0px bottom -50px;  
+      border: none;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px; 
+  }
+  .price-div {
+      background-color: #948f8f;
+      height: 28%;
+      text-align: center;
+      position: relative;
+      bottom: 16px;
+      font-weight: bold;
+      border: none;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+  .purchase {
+      font-weight: bold;
+  }
+  .footer-div {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 70px;
+  margin: 0px;
+  }
+  .footer-div > p {
+      text-align: center;
+      width: 33%;
+  }
