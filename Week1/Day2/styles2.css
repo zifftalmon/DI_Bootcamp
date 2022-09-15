@@ -1,3 +1,10 @@
+@media screen 
+and (min-width: 600px) {
+    .container {
+    display: flex;
+    flex-direction: column; 
+}
+}
 * {
     font-family:'poppins', sans-serif;  
   }
@@ -20,11 +27,8 @@
   }
   
   h1 {
-      margin-left: 70px;
+      margin-left: 50px;
       font-weight: bold;
-  }
-  #products {
-      margin-top: 10%;
   }
   .dropdown {
       width: 10%;
@@ -67,8 +71,10 @@
       width:100%;
       margin-top: 60px;
   }
+  #products {
+    margin-top: 10%;
+}
   .product-div {
-
       margin: 10px;
       width: 200px;
       height: 350px;
@@ -82,7 +88,7 @@
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
   }
-  .clothes-div-sweater {
+  .clothes-div-shoes {
       background-color: black;
       height: 70%;
       background-image: url(c46372c8-e87d-424f-8cf9-7505e72c75a4.jfif);
@@ -109,7 +115,6 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: left 0px bottom -50px;  
-      border: none;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px; 
   }

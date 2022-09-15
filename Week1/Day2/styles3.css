@@ -14,14 +14,14 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #A8A7AB;
-    z-index:9999;
+    z-index: 9999;
 
 }
 i {
     padding: 10px;
 }
 h1 {
-    margin-left: 70px;
+    margin-left: 50px;
     font-weight: bold;
 }
 .dropdown {
@@ -57,6 +57,45 @@ h1 {
 }
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.title {
+    text-align: center;
+    margin-top: 80px;
+    margin-right: 50px;
+    font-size: 50px;
+    
+}
+.form-div {
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: baseline; 
+    margin-left: 385px;
+    margin-top: 40px;
+    background-color: rgba(168, 167, 171, 0.5);
+    font-weight: bold;
+    border-radius: 10px; 
+
+
+}
+input{
+    margin: 15px 0px 15px 20px;
+    width: 80%;
+    border: none;
+}
+input[type=submit] {
+    display: block;
+    margin: auto auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #2B2A2D;
+    color: white;
+    transition: 1ms;
+    cursor: pointer;
 }
 .footer-div {
 position: sticky;

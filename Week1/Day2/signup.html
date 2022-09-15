@@ -9,113 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <title>Signup Page</title>
-        <style>
-            * {
-    font-family: 'Poppins', sans-serif;
-}
-body {
-    margin: 0;
-    background-color: #FFE4E5;
-    
-}
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 12%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #A8A7AB;
 
-}
-i {
-    padding: 10px;
-}
-h1 {
-    margin-left: 70px;
-    font-weight: bold;
-}
-.dropdown {
-    width: 10%;
-    border: none;
-    background-color: #005D77;
-    position: relative;
-    display: inline-block;
-    
-}
-.dropbtn {
-    background-color: #005D77;
-    width: 100%;
-    border: none;
-    font-size: 30px;
-    height: 10px;
-    color:#A8A7AB;
-    font-weight: bold;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #7FD1AE;
-    min-width: 160px;
-    margin-top: 29.5px;
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.title {
-    text-align: center;
-    margin-top: 80px;
-    margin-right: 50px;
-    font-size: 50px;
-    
-}
-.form-div {
-    display: flex;
-    width: 40%;
-    flex-direction: row;
-    justify-content: center;
-    vertical-align: baseline; 
-    margin-left: 392px;
-    margin-top: 40px;
-    background-color: rgba(168, 167, 171, 0.5);
-    font-weight: bold;
-    border-radius: 10px; 
-
-
-}
-input{
-    margin: 15px 0px 15px 20px;
-    width: 80%
-}
-input[type=submit] {
-    display: block;
-    margin: auto auto;
-    width: 50%;
-    margin-bottom: 10px;
-}
-.footer-div {
-position: sticky;
-bottom: 0;
-left: 0;
-display: flex;
-justify-content: center;
-align-items: flex-end;
-width: 100%;
-height: 70px;
-margin: 0px;
-}
-.footer-div > p {
-    text-align: center;
-    width: 33%;
-}
-        </style>
     </head>
     <body>
         <nav>
@@ -128,7 +22,7 @@ margin: 0px;
                         <a href="file:///C:/Users/Ziv/Documents/coding%20files/DI_Bootcamp/Week1/Day2/index.html" target="_self">Home</a>
                         <a href="file:///C:/Users/Ziv/Documents/coding%20files/DI_Bootcamp/Week1/Day2/products.html" target="_self">Products</a>
                         <a href="file:///C:/Users/Ziv/Documents/coding%20files/DI_Bootcamp/Week1/Day2/signup.html" target="_self">Signup</a>
-                        <a>Login</a>
+                        <a href="file:///C:/Users/Ziv/Documents/coding%20files/DI_Bootcamp/Week1/Day2/login.html" target="_self">Login</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +42,7 @@ margin: 0px;
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="Email"><br>
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required placeholder="Password" minlength="8">
+            <input type="password" id="password" name="password" required placeholder="Password" minlength="8" maxlength="16">
             <input type="submit" value="submit">
         </form>
         </div>
