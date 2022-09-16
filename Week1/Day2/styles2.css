@@ -118,6 +118,45 @@ and (min-width: 600px) {
       border-top-right-radius: 10px;
       border-top-left-radius: 10px; 
   }
+  .clothes-div-adidas{
+    background-color: black;
+    height: 70%;
+    background-image: url(7c5968ca-f4ca-423a-ab5b-42423d86322c.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 0px bottom -50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .clothes-div-pants{
+    background-color: black;
+    height: 70%;
+    background-image: url(0a855a11-cab0-4387-8ae1-79d952f44ef6.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 0px bottom -70px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .clothes-div-white{
+    background-color: black;
+    height: 70%;
+    background-image: url(0e3c830a-eb1b-4539-a2d7-054e1c75985c.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 0px bottom -70px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+.clothes-div-shorts{
+  background-color: black;
+  height: 70%;
+  background-image: url(d3f794eb-5111-465b-bbdb-a95fbf05111b.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
   .price-div {
       background-color: #948f8f;
       height: 28%;
