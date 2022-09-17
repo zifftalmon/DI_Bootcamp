@@ -40,13 +40,14 @@ h1 {
     height: 10px;
     color:#A8A7AB;
     font-weight: bold;
+    margin-top: 10px;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #7FD1AE;
     min-width: 160px;
-    margin-top: 29.5px;
+    margin-top: 19px;
     z-index: 1;
 }
 .dropdown-content a {
@@ -97,4 +98,27 @@ margin: 0px;
 .footer-div > p {
     text-align: center;
     width: 33%;
+}
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    #navbar {
+        justify-content: center;
+        
+    }
+    i {
+        margin-left: 0px;
+    }
+    h1 {
+        margin-right: 50px;
+    }
+    .dropdown {
+        width: 22%;
+    }
+    .dropbtn {
+        font-size: 15px;
+        margin-top: 25px;                   
+    }
+    .dropdown-content {
+        margin-top: 28px;
+    }
+    
 }
