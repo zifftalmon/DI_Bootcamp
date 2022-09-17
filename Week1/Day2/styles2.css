@@ -157,6 +157,46 @@ and (min-width: 600px) {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
+
+.clothes-div-pants2{
+  background-color: black;
+  height: 70%;
+  background-image: url(28de72e8-b394-4005-b2b2-ba580e0522ac.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 0px top -10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.clothes-div-coat{
+  background-color: black;
+  height: 70%;
+  background-image: url(aee5d125-02eb-4141-a189-c4df3c648cdd.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 0px bottom -70px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.clothes-div-hoodie{
+  background-color: black;
+  height: 70%;
+  background-image: url(e44d941b-2c9a-4d84-8e6c-f9fd0bd9c5d4.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.clothes-div-stripes{
+  background-color: black;
+  height: 70%;
+  background-image: url(1dec5249-18d0-4d4d-8524-2563135866b7.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 0px bottom -70px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
   .price-div {
       background-color: #948f8f;
       height: 28%;
