@@ -71,7 +71,7 @@ h1 {
 }
 .form-div {
     display: flex;
-    width: 30%;
+    width: 50vw;
     justify-content: center;
     vertical-align: baseline;
     background-color: rgba(168, 167, 171, 0.5);
