@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #A8A7AB;
-    z-index:9999;
+    z-index: 9999;
 
 }
 i {
@@ -62,30 +62,47 @@ h1 {
 .dropdown-content a:hover {
     background-color: #9dfed4;
   }
-h2 {
+.title {
     text-align: center;
-    margin-top: 100px;
-    font-size: 35px;
+    margin-top: 80px;
+    margin-right: 50px;
+    font-size: 50px; 
+    /* border: 3px solid red;   */
 }
-img {
-    display: block;
-    padding: 20px;
-    margin: auto auto;
+#form {
+    display: flex;
     justify-content: center;
-    width: 300px;
-    height: 400px;
-    border-radius: 10%;
+    align-items: center;
 }
-.img-div {
-    animation: fadeIn 1.5s;
+.form-div {
+    display: flex;
+    width: 50vw;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(168, 167, 171, 0.5);
+    font-weight: bold;
+    border-radius: 10px; 
+    /* border: 3px solid red; */
+
+
 }
-@keyframes fadeIn {
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
+input{
+    margin: 15px 0px 15px 20px;
+    width: 80%;
+    border: none;
+}
+input[type=submit] {
+    display: block;
+    margin: auto auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #2B2A2D;
+    color: white;
+    transition: 1ms;
+    cursor: pointer;
 }
 .footer-div {
 position: sticky;
@@ -104,26 +121,17 @@ margin: 0px;
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
     #navbar {
-        justify-content: space-around;
-        height: 10vh;
-        
-    }
-    i {
-        margin-left: 0px;
-    }
-    h1 {
-        margin-right: 10em;
-        
-    }
-    .dropdown {
-        width: 22%;
-    }
-    .dropbtn {
-        font-size: 30px;
-        margin-top: 1em;
-    }
+        justify-content: space-evenly;
+       }
+       .dropbtn {
+        margin-top: 0;
+        width: 20vw;
+        height: 12vh;
+       }
     .dropdown-content {
-        margin-top: 30px;
+        margin-top: 0;
     }
-    
+    .title {
+        margin-top: 2em;
+    }
 }

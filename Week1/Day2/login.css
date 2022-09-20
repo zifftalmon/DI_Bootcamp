@@ -40,14 +40,13 @@ h1 {
     height: 10px;
     color:#A8A7AB;
     font-weight: bold;
-    margin-top: 10px;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #7FD1AE;
     min-width: 160px;
-    margin-top: 19px;
+    margin-top: 29.5px;
     z-index: 1;
 }
 .dropdown-content a {
@@ -63,17 +62,18 @@ h1 {
     text-align: center;
     margin-top: 80px;
     margin-right: 50px;
-    font-size: 50px;
-    
+    font-size: 50px;  
+}
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .form-div {
     display: flex;
-    width: 40%;
-    flex-direction: row;
+    width: 30%;
     justify-content: center;
-    vertical-align: baseline; 
-    margin-left: 385px;
-    margin-top: 40px;
+    vertical-align: baseline;
     background-color: rgba(168, 167, 171, 0.5);
     font-weight: bold;
     border-radius: 10px; 
@@ -91,7 +91,6 @@ input[type=submit] {
     width: 50%;
     margin-bottom: 10px;
 }
-
 input[type=submit]:hover {
     background-color: #2B2A2D;
     color: white;
@@ -113,26 +112,13 @@ margin: 0px;
     text-align: center;
     width: 33%;
 }
-@media screen and (min-width: 600px) and (orientation: portrait) {
+@media screen and (min-width: 600px) {
     #navbar {
-        justify-content: center;
-        
-    }
-    i {
-        margin-left: 0px;
-    }
-    h1 {
-        margin-right: 50px;
-    }
-    .dropdown {
-        width: 22%;
-    }
-    .dropbtn {
-        font-size: 15px;
-        margin-top: 25px;                   
-    }
-    .dropdown-content {
-        margin-top: 28px;
-    }
-    
+        justify-content: space-around;
+       }
+       .dropbtn {
+        width: 22vw;
+        height: 12vh;
+       }
+
 }
