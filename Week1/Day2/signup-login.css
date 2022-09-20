@@ -17,12 +17,11 @@ body {
     z-index: 9999;
 
 }
-i {
+/* i {
     padding: 10px;
-}
+} */
 h1 {
-    margin-left: 50px;
-    font-weight: bold;
+    align-self: center;
 }
 .dropdown {
     width: 10%;
@@ -121,11 +120,11 @@ margin: 0px;
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
     #navbar {
-        justify-content: space-evenly;
+        justify-content: space-around;
        }
        .dropbtn {
         margin-top: 0;
-        width: 20vw;
+        width: 22vw;
         height: 12vh;
        }
     .dropdown-content {
