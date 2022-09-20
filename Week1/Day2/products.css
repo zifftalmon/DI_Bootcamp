@@ -2,27 +2,29 @@
 * {
     font-family:'poppins', sans-serif;  
   }
+  
   body {
       background-color: #FFE4E5;
       margin: 0;
   }
+  
   #navbar {
       position: fixed;
       top: 0;
       width: 100%;
-      height: 12%;
+      height: 12vh;
       display: flex;
       justify-content: space-between;
       background-color: #A8A7AB;
       z-index:9999;
   }
   
-  h1 {
-      margin-left: 50px;
-      font-weight: bold;
+    h1 {
+        align-self: center;
+        
   }
   .dropdown {
-      width: 10%;
+      width: 10vw;
       border: none;
       background-color: #005D77;
       position: relative;
@@ -31,19 +33,19 @@
   }
   .dropbtn {
       background-color: #005D77;
-      width: 100%;
+      width: 10vw;
       border: none;
       font-size: 30px;
-      height: 10px;
+      height: 10vh;
       color:#A8A7AB;
       font-weight: bold;
-      margin-top: 10px;
   }
   .dropdown-content {
       display: none;
       position: absolute;
       background-color: #7FD1AE;
-      min-width: 160px;
+      min-width: 160vw;
+      top: 69px;
       z-index: 1;
   }
   .dropdown-content a {
@@ -55,152 +57,55 @@
   .dropdown:hover .dropdown-content {
       display: block;
   }
+  .dropdown-content a:hover {
+    background-color: #9dfed4;
+  }
+  
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    width: 100%;
+    border: 3px solid red;
+}
   .container {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
       width:100%;
-      margin-top: 60px;
   }
-  #products {
-    margin-top: 10%;
-}
   .product-div {
-      margin: 10px;
-      width: 200px;
-      height: 350px;
+      box-sizing: border-box;   
+      margin: 25px;
+      width: 20vw;
+      height: 63vh;
   }
-  .clothes-div-jeans {
-      background-color: black;
-      height: 70%;
-      background-image: url(fd66e884-a94e-43ee-b626-3643f608dd71.jfif);
-      background-size: cover;
-      background-repeat: no-repeat;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-  }
-  .clothes-div-shoes {
-      background-color: black;
-      height: 70%;
-      background-image: url(c46372c8-e87d-424f-8cf9-7505e72c75a4.jfif);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: left 0px top -30px;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;   
-  }
-  .clothes-div-jacket {
-      background-color: black;
-      height: 70%;
-      background-image: url(55a4fcd5-bd7c-4e3b-9333-c0e6a0325ca3.jfif);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: left 0px bottom -40px;   
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-  }
-  .clothes-div-buttondown {
-      background-color: black;
-      height: 70%;
-      background-image: url(b62a90bd-250f-4618-803e-5b7aa6cd3b69.jfif);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: left 0px bottom -50px;  
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px; 
-  }
-  .clothes-div-adidas{
-    background-color: black;
-    height: 70%;
-    background-image: url(7c5968ca-f4ca-423a-ab5b-42423d86322c.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left 0px bottom -50px;
-    border-top-right-radius: 10px;
+  img {
+    width: 20vw;
+    height: 44vh;
     border-top-left-radius: 10px;
-  }
-  .clothes-div-pants{
-    background-color: black;
-    height: 70%;
-    background-image: url(0a855a11-cab0-4387-8ae1-79d952f44ef6.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left 0px bottom -70px;
     border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
   }
-  .clothes-div-white{
-    background-color: black;
-    height: 70%;
-    background-image: url(0e3c830a-eb1b-4539-a2d7-054e1c75985c.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left 0px bottom -70px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-.clothes-div-shorts{
-  background-color: black;
-  height: 70%;
-  background-image: url(d3f794eb-5111-465b-bbdb-a95fbf05111b.jfif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.clothes-div-pants2{
-  background-color: black;
-  height: 70%;
-  background-image: url(28de72e8-b394-4005-b2b2-ba580e0522ac.jfif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left 0px top -10px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-.clothes-div-coat{
-  background-color: black;
-  height: 70%;
-  background-image: url(aee5d125-02eb-4141-a189-c4df3c648cdd.jfif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left 0px bottom -70px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-.clothes-div-hoodie{
-  background-color: black;
-  height: 70%;
-  background-image: url(e44d941b-2c9a-4d84-8e6c-f9fd0bd9c5d4.jfif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-.clothes-div-stripes{
-  background-color: black;
-  height: 70%;
-  background-image: url(1dec5249-18d0-4d4d-8524-2563135866b7.jfif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left 0px bottom -70px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
   .price-div {
       background-color: #948f8f;
-      height: 28%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      position: relative;
-      bottom: 16px;
-      font-weight: bold;
-      border: none;
+      width: 20vw;
+      margin-top: -10px;
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
   }
   .purchase {
       font-weight: bold;
+      margin-bottom: 20px;
+      width: 15vw;
+      border: 0px;
+      border-radius: 5px;
   }
   .footer-div {
   position: sticky;
@@ -217,6 +122,7 @@
       text-align: center;
       width: 33%;
   }
+/*   
   @media screen and (min-width: 600px) and (orientation: portrait) {
     #navbar {
         justify-content: center;
@@ -277,7 +183,7 @@
         padding: 20px;
         border-radius: 5px;
 }
-    }
+    }  */
 
 
 
