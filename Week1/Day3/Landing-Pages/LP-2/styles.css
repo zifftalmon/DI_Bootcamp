@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: #CEF6FF;
+}
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    width: 100vw;
+    height: 7vh;
+    background-color: rgb(7, 99, 96);
+    font-family: 'Yeseva One', cursive;
+}
+.navbar h1 {
+    font-size: 26px;
+}
+.navbar button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 141, 184);
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    font-family: 'Lexend Deca', cursive;
+    font-weight: bold;
+    border-radius: 10px;
+}
+main h2 {
+    text-align: center;
+    padding: 1em;
+    font-family: 'Yeseva One', cursive;
+    font-size: 2em;
+}
+
+.text-div {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100vw;
+    height: 30vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    justify-items: center;
+
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+input {
+    border: none; 
+    border-radius: 10px;
+}
+input[type=text],[type=email],[type=url] {
+    width: 25vw;
+    height: 5vh;
+}
+.select-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 90vw;
+}
+select {
+    width: 92vw;
+    align-self: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    height: 5vh;
+    margin-left: 1em;
+}
+option {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+.checkbox {
+    display: flex;
+    justify-content: left;
+    padding: 1em;
+    width: 90vw;
+    border: none;
+}
+.download-btn {
+    background-color: rgb(12, 141, 184);
+    color: white;
+    width: 20vw;
+    height: 10vh;
+    border: none;
+    font-size: 20px;
+    font-family: 'Lexend Deca', cursive;
+    font-weight: bold;
+    border-radius: 10px;    
+}
+.download-btn:hover {
+    background-color: white;
+    color: rgb(12, 141, 184);
+    transition: 0.2s;
+}
+@media screen and (min-width:600px) and (max-width:767px) {
+    .navbar h1 {
+        font-size: 13px;
+    }
+    .navbar button {
+        width: 20vw;
+        font-size: 12px;
+    }
+    .text-div {
+        font-size: 14px;
+    }
+    .download-btn {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .navbar h1 {
+        font-size: 16px;
+    }
+    .navbar button {
+        width: 20vw;
+        font-size: 15px;
+    }
+    .text-div {
+        font-size: 14px;
+    }
+    .download-btn {
+        font-size: 15px;
+    }
+}
