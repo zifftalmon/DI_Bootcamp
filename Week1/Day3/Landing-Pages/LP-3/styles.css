@@ -1,0 +1,81 @@
+body {
+    background-color: #E4E9DF;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #EAC3B6;
+}
+.navbar .header {
+    display: flex;
+}
+.navbar .nav1 ul {
+    display: flex;
+    list-style: none;
+}
+.navbar .nav1 ul > li {
+    margin: 10px;
+}
+.navbar .nav2 ul {
+    display: flex;
+    list-style: none;
+}
+.navbar .nav2 ul > li {
+    margin: 10px;
+}
+.title {
+    text-align: center;
+}
+.selection {
+    display: flex;
+    justify-content: center;
+    border: 3px solid red;
+    
+}
+.selection p {
+    margin: 1em;
+}
+.selection select {
+    height: 5vh;
+    margin: 0.8em;
+}
+#offers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.offer {
+    background-color: #EAC3B6;
+    display: flex;
+    margin: 5em;
+    padding: 6em; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 7vw;
+    height: 75vh;
+
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: #AECEF7;
+    width: 22.5vw;
+    border-radius: 5px;
+    height: 90vh;
+
+}
+.features hr {
+    margin-left: 0;
+    width: 15vw;
+}
+.features ul {
+    list-style: none;
+}
+.features ul > li {
+    margin: 10px;
+}
