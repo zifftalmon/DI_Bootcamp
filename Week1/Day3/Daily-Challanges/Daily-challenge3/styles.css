@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 155px);
+    grid-template-rows: repeat(15, 40px);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 31px);
+    grid-template-rows: 10px;
+    gap: 8px;
+}
+.box {
+    width: 35px;
+    height: 35px;
+}
+.white {
+    background-color: #e7e5e5;
+}
+.dark {
+    background-color: #acaaaa;
+}
+.darker {
+    background-color: #5e5e5e;
+}
+.black {
+    background-color: #1c1c1c;
+}
