@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+#container {
+    display: grid;
+    border: 2px solid black;
+    width: 40vw;
+    height: 88.5vh;
+    grid-template-columns: repeat(6, 96px);
+    grid-template-rows: repeat(5, 96px);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 25px);
+    grid-template-rows: repeat(3, 25px);
+    gap: 7px;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: 25px;
+    grid-template-rows: repeat(3, 25px);
+    gap: 7px; 
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3,25px);
+    grid-template-rows: 25px;
+    gap: 7px; 
+}
+
+.box {
+    width: 30px;
+    height: 30px; 
+}
+.orange {
+    background-color: rgb(173, 119, 18)
+}
+.beige {
+    background-color: rgb(190, 178, 108)
+}
+.brown {
+    background-color: rgb(124, 77, 77);
+}
