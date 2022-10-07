@@ -200,7 +200,7 @@ h1 {
     .features {
         width: 31vw;
         height: 99vh;
-        bottom: 12em;
+        bottom: 18em;
     }
     .features ul {
         font-size: 11px;
@@ -209,7 +209,7 @@ h1 {
         font-size: 14px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 993px) {
     .navbar {
         height: 7vh;
         width: 101vw;
