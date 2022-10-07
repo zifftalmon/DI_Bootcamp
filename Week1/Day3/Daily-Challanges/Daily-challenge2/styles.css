@@ -1,38 +1,42 @@
 body {
     margin: 0;
 }
+
+/* container for containers */
 #container {
     display: grid;
-    border: 2px solid black;
     width: 40vw;
     height: 88.5vh;
     grid-template-columns: repeat(6, 96px);
     grid-template-rows: repeat(5, 96px);
 }
+/* container for the "tiles" */
 .container {
     display: grid;
     grid-template-columns: repeat(3, 25px);
     grid-template-rows: repeat(3, 25px);
     gap: 7px;
 }
+/* container for most-right tiles */
 .container1 {
     display: grid;
     grid-template-columns: 25px;
     grid-template-rows: repeat(3, 25px);
     gap: 7px; 
 }
-
+/* container for most bottom tiles */
 .container2 {
     display: grid;
     grid-template-columns: repeat(3,25px);
     grid-template-rows: 25px;
     gap: 7px; 
 }
-
+/* class for "tile" styling */
 .box {
     width: 30px;
     height: 30px; 
 }
+/* color classes */
 .orange {
     background-color: rgb(173, 119, 18)
 }
