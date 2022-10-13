@@ -1,0 +1,42 @@
+.card {
+    width: 100%;
+}
+.card-img {
+    height: 99vh;
+    margin: 0;
+}
+.card .navbar-brand {
+    font-size: 35px;
+}
+.card-img-overlay {
+    margin-top: 7em;
+}
+.card-img-overlay form > input {
+    width: 30vw;
+    height: 9vh; 
+    margin: 1em;
+}
+.card-img-overlay form > select {
+    width: 15vw;
+    height: 9vh;
+    margin: 1em;
+}
+.card-img-overlay form > button {
+    width: 10vw;
+    height: 9vh;
+    margin: 1em;   
+}
+.row {
+    width: 99.8vw;
+}
+.border-right {
+    height: 100px;
+}
+hr {
+    width: 15px;
+    background-color: white;
+}
+.black {
+    width: 15px;
+    background-color: black;
+}
