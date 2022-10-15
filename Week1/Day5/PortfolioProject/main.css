@@ -1,0 +1,244 @@
+:root{
+    --main-white: #FAF8FF;
+    --main-gray:hsl(240, 5%, 35%);
+    --main-blue: #2D2D46;
+    --main-brown: #733B1B;
+    --main-green: #006B56;
+    --main-red: #462618;
+    --main-black: #181A17;
+  }
+  * {
+    margin:0;
+  }
+  * 
+  ::before
+  ::after {
+   box-sizing :inherit;
+  }
+  html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  html,
+  body{
+    font-family: 'Montserrat', sans-serif;
+    color: #CBD0D3;
+    background-image: linear-gradient(to top, #95b6ab, #8ca798, #849786, #7b8875, #737966);   
+  }
+  #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    top:0em;
+    width: 100%;
+    height: 4.5em;
+    background-color:#6fb1ae;
+    z-index: 9999;  
+  }
+  nav h1 {
+    padding: 1em;
+  }
+  nav > ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  nav > li{
+    padding: 2.5em;
+    align-self: flex-end; 
+  }
+  
+  li a{
+    display: block;
+    color:#CBD0D3;
+    text-decoration: none;
+    margin: 0.5em;
+    font-size: 25px;
+  }
+  
+  #navbar li a:hover {
+    color:#FFFFFF;
+  }
+  
+  .welcome-section-header{
+    font-size: 4rem;
+    font-weight: 500; 
+  }
+  
+  .wel-desc{
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  
+  #welcome-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2.5;
+    margin-top: 2.5rem;
+    padding: 3em;
+  }
+  
+  .project-section-header{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5.5rem;
+    font-weight: 500;
+  }
+  
+  #projects{
+    display: grid;
+    grid-auto-flow: column;
+    padding: 4em;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  .project-tile {
+    background-color: #473548;
+    color: var(--main-white);
+    margin-left: 1.25rem;
+    height: 48vh;
+    width: 20vw;
+    text-decoration: none;
+  }
+  .project-tile img {
+    width: 20vw;
+    height: 40vh;
+  }
+  .project-tile a {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--main-white);
+    text-decoration: none;
+  }
+  .project-tile:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  #resume-section{
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+    line-height: 2;
+  }
+  #resume-section h1 {
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 500;
+  }
+  #resume-section h2, h3 {
+    font-weight: 350;
+  }
+  #resume-section ul {
+    list-style: none;
+    font-weight: 200;
+  }
+  #resume-section li {
+    font-size: 16px;
+  }
+  
+  #contact-section{
+    text-align: center; 
+  }
+  
+  #contact-list{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.563rem;
+  }
+  
+  #contact{
+    margin-bottom: 2rem;
+  }
+  
+  #contact-section-header{
+    margin-top: 25rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  
+  #contact-desc{
+    font-size: 1.563rem;
+    text-align: center;
+    font-weight: 200;
+    
+  }
+  
+  #contact-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25rem;
+  }
+  
+  #profile-link{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1.25rem;
+    
+  }
+  
+  #contact-section li a:hover{
+    animation-name: profile;
+    font-size: 2.188rem;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    }
+  
+  @keyframes profile {
+    0%{
+      font-size: 25px;
+    }
+    
+    20%{
+      font-size: 26px;
+    }
+    
+    40%{
+      font-size: 27px;
+    }
+    
+    60%{
+      font-size: 28px;
+    }
+    
+    80%{
+      font-size: 29px;
+    }
+    
+    100%{
+      font-size: 30px;
+    }
+  }
+  
+  #footer{
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #footer > p{
+    font-size: 1.25rem;
+  }
+  @media(max-width: 75em){
+    html{
+      font-size:60%;
+    }
+  }
+  
+  @media(max-width: 61.25em){
+    html {
+    font-size: 58%;
+    }
+  }
+  
+  @media(max-width: 28.75){
+    html {
+    font-size:55%;
+    }
+  }
+  
