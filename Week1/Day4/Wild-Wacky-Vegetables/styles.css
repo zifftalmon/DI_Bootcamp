@@ -1,0 +1,11 @@
+.gray {
+    background-color: rgb(236, 227, 227);
+    height: 52vh;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 15vw;
+    height: 25vh;
+}
