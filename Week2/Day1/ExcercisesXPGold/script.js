@@ -1,16 +1,15 @@
 //Exercise 1
 
-let sentence = ["my","favorite","color","is","blue"];
+const sentence = ["my","favorite","color","is","blue"];
 console.log(sentence.join(''));   
 
 //Exercise 2 
-let str1 = "mix";
-let str2 = "pod";
+const str1 = "mix";
+const str2 = "pod";
 
-let newStr1 = str2.slice(0,2) + str1.slice(2);
-let newStr2 = str1.slice(0,2) + str2.slice(2);
-
-let newWord = newStr1 + " " +  newStr2;
+const newStr1 = str2.slice(0,2) + str1.slice(2);
+const newStr2 = str1.slice(0,2) + str2.slice(2);
+const newWord = `${newStr1} ${newStr2}`;
 console.log(newStr1);
 console.log(newStr2);
 console.log(newWord);
