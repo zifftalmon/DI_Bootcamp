@@ -16,8 +16,8 @@ console.log(newWord);
 
 //Excercise 3
 
-let num1 = window.prompt('Enter a Number')-0;
-let num2 = window.prompt('Enter a Second Number')-0;
+const num1 = window.prompt('Enter a Number')-0;
+const num2 = window.prompt('Enter a Second Number')-0;
 alert(num1 + num2);
 alert(num1 - num2);
 alert(num1 / num2);
