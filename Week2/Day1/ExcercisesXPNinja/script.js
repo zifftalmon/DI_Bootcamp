@@ -49,38 +49,47 @@ functionalify of the loop, the differences and beahviors of strings and array, d
 
 // Exercise 3
 
-let userSentence = prompt('Write a sentence containing the word \"Nemo\" please');
+// let userSentence = prompt('Write a sentence containing the word \"Nemo\" please');
 
-const userArray = userSentence.split(" ");
+// const userArray = userSentence.split(" ");
 
-const word = "Nemo".toLowerCase();
+// const word = "Nemo".toLowerCase();
 
-const wordPosition = userArray.indexOf("Nemo".toLowerCase());
+// const wordPosition = userArray.indexOf("Nemo".toLowerCase());
 
 
-	if (word == userSentence.match(word)) {
-		console.log ("I found Nemo at " + wordPosition);
-	} else {
-		console.log ('I can\'t find Nemo.');
-	}
+// 	if (word == userSentence.match(word)) {
+// 		console.log ("I found Nemo at " + wordPosition);
+// 	} else {
+// 		console.log ('I can\'t find Nemo.');
+// 	}
+
+/*
+i this exercise, at first i managed to find the index of nemo using the for loop, however insted of finding the index of the extire word inside 
+of th "array" of the sentence, it would only find the index of the first letter of the word, producing a number which is correct but not as it was shown in the example, after 
+playing with the split method, i found a way to make the prompt into an array, thus creating a console.log that showed the index of the entire word
+*/
 
 // Exercise 4
 
-// const oNum = prompt('Enter a Number'); 
+const oNum = prompt('Enter a Number'); 
 
-// const word = 'boom'
+const word = 'boom'
 
-// const letter = 'o'.repeat(oNum);
+const letter = 'o'.repeat(oNum);
 
+function oCount(oNum) {
+if (oNum <= 2) {
+    return word;
+} else if  ((oNum >= 2)&&(oNum%2==0)){                                                                                               
+    return `b${letter}m!`;
+} else if (oNum%5 == 0){
+    return `B${letter.toUpperCase()}M`;
+} else if ((oNum%2==0)&&(oNum%5==0)) { 
+    return `B${letter.toUpperCase()}M!`;
+} else {
+    return 'mooooooo!';
+}
+}
 
-// if (oNum <= 2) {
-//     console.log(word);
-// } else if ((oNum > 2) && (oNum%2==0)){                                                                                               
-//     console.log('b' + letter + 'm!');
-// } else if (oNum%5==0){
-//     console.log('B' + (letter.toUpperCase()) + 'M');
-// } else if ((oNum%2==0)&(oNum%5==0)) { 
-//     console.log('B' + (letter.toUpperCase()) + 'M!');
-// } else {
-//     console.log('mooooooo!');
-// }
+oCount();
