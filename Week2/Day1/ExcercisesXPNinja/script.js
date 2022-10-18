@@ -33,10 +33,13 @@ true != true
 
 //Excercise 2
 
-// const numStr = prompt('write a string of numbers separated by commas please');
-// const numbers = numStr.substring(0);
-// const sum = numbers.split(',');
-// console.log(sum);
+const numStr = prompt('write a string of numbers separated by commas please');
+const numbersArr = numStr.split(',');
+let sum = 0;
+for (let i=0; i < numbersArr.length; i++) {
+    sum += Number(numbersArr[i]);
+}
+console.log(sum);
 
 
 //Exercise 3
@@ -56,21 +59,21 @@ true != true
 
 //Exercise 4
 
-const oNum = prompt('Enter a Number'); 
+// const oNum = prompt('Enter a Number'); 
 
-const word = 'boom'
+// const word = 'boom'
 
-const letter = 'o'.repeat(oNum);
+// const letter = 'o'.repeat(oNum);
 
 
-if (oNum <= 2) {
-    console.log(word);
-} else if ((oNum > 2) && (oNum%2==0)){                                                                                               
-    console.log('b' + letter + 'm!');
-} else if (oNum%5==0){
-    console.log('B' + (letter.toUpperCase()) + 'M');
-} else if ((oNum%2==0)&(oNum%5==0)) { 
-    console.log('B' + (letter.toUpperCase()) + 'M!');
-} else {
-    console.log('mooooooo!');
-}
+// if (oNum <= 2) {
+//     console.log(word);
+// } else if ((oNum > 2) && (oNum%2==0)){                                                                                               
+//     console.log('b' + letter + 'm!');
+// } else if (oNum%5==0){
+//     console.log('B' + (letter.toUpperCase()) + 'M');
+// } else if ((oNum%2==0)&(oNum%5==0)) { 
+//     console.log('B' + (letter.toUpperCase()) + 'M!');
+// } else {
+//     console.log('mooooooo!');
+// }
