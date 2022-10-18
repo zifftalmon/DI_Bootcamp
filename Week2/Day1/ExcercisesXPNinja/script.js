@@ -33,6 +33,47 @@ true != true
 
 //Excercise 2
 
-const numStr = window.prompt('write a string of numbers separated by commas please');
+// const numStr = prompt('write a string of numbers separated by commas please');
+// const numbers = numStr.substring(0);
+// const sum = numbers.split(',');
+// console.log(sum);
 
-console.log(numStr.split(',').join(''));
+
+//Exercise 3
+
+// const userSentence = prompt('Write a sentence containing the word \"Nemo\" please');
+
+// const word = "Nemo".toLowerCase();
+
+// const wordPosition = userSentence.indexOf("Nemo".toLowerCase());
+
+
+// 	if (word == userSentence.match(word)) {
+// 		console.log ("I found Nemo at " + wordPosition);
+// 	} else {
+// 		console.log ('I can\'t find Nemo.');
+// 	}
+
+//Exercise 4
+
+const oNum = prompt('Enter a Number'); 
+
+
+const word = 'boom'
+
+const letter = 'o'.repeat(oNum);
+
+
+if (oNum <= 2) {
+    console.log(word);
+} else if  (oNum > 2){
+    console.log('b' + letter + 'm');
+} else if (oNum % 2 == 0) {                                                                                               
+    console.log('b' + letter + 'm!');
+} else if (oNum % 5 == 0){
+    console.log('B' + (letter.toUpperCase()) + 'M');
+} else if (oNum % 2 == 0 && oNum % 5 == 0) {
+    console.log('B' + (letter.toUpperCase()) + 'M!');
+} else {
+    console.log('mooooooo!');
+}
