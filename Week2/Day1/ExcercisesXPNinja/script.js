@@ -41,6 +41,11 @@ for (let i=0; i < numbersArr.length; i++) {
 }
 console.log(sum);
 
+/*while i was working on this problem i talked with my cousin who is also a programmer about the way this problem was presented, hw advised that i will try to use a for loop
+i read about the excat way for loops works, reading its components out loud, what each expression does, saw multiple examples, once i felt
+comfortable trying out and testing this concept to achive a solution, i stumbled upon some difficulties, however after trying different variations on the formula, i found a solution and undestood butter the
+functionalify of the loop, the differences and beahviors of strings and array, differnt string and array methods, and better reading of errors. and percervirence, this was a tricky one for me
+*/
 
 //Exercise 3
 
