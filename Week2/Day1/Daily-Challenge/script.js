@@ -13,3 +13,5 @@ fruits.splice(0,1);
 fruits.reverse();
 
 console.log(fruits);
+
+
