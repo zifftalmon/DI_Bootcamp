@@ -58,7 +58,6 @@ true != true
 
 const oNum = prompt('Enter a Number'); 
 
-
 const word = 'boom'
 
 const letter = 'o'.repeat(oNum);
@@ -66,13 +65,11 @@ const letter = 'o'.repeat(oNum);
 
 if (oNum <= 2) {
     console.log(word);
-} else if  (oNum > 2){
-    console.log('b' + letter + 'm');
-} else if (oNum % 2 == 0) {                                                                                               
+} else if ((oNum > 2) && (oNum%2==0)){                                                                                               
     console.log('b' + letter + 'm!');
-} else if (oNum % 5 == 0){
+} else if (oNum%5==0){
     console.log('B' + (letter.toUpperCase()) + 'M');
-} else if (oNum % 2 == 0 && oNum % 5 == 0) {
+} else if ((oNum%2==0)&(oNum%5==0)) { 
     console.log('B' + (letter.toUpperCase()) + 'M!');
 } else {
     console.log('mooooooo!');
