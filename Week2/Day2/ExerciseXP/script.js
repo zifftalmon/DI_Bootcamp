@@ -25,12 +25,23 @@
 
 //Exercise3
 
-const number = prompt("enter a number");
+// const number = prompt("enter a number");
 
-if (number % 2 == 0) {
-    alert("x is an even number");
+// if (number % 2 == 0) {
+//     alert("x is an even number");
+// } else {
+//     alert("x is an odd number");
+// }
+
+//Exercise4
+
+const users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
+
+const usersLeft = users.splice(2,2);
+if (users.length == 1) {
+    console.log(users[0]);
+} else if (users.length >= 2) {
+    console.log(`${users[0]} ${users[1]} and ${usersLeft.length} more are online`);
 } else {
-    alert("x is an odd number");
+    console.log("no one is online");
 }
-
-
