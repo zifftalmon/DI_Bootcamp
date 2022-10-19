@@ -85,7 +85,7 @@ if (oNum <= 2) {
     return `b${letter}m!`;
 } else if (oNum%5 == 0){
     return `B${letter.toUpperCase()}M`;
-} else if (oNum%2==0 && oNum%5==0) { 
+} else if (oNum%2 == 0 && oNum%5 == 0) { 
     return `B${letter.toUpperCase()}M!`;
 } else {
     return 'mooooooo!';
