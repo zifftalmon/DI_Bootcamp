@@ -93,3 +93,9 @@ if (oNum <= 2) {
 }
 
 alert(oCount(oNum));
+
+/*to solve the order in which the string is iterated and to reach the desired outcome from each condition i changed the order of the conditions
+so that the condittion which checks if the input is devisible by 2 AND 5 is first, by doing this the input is evaluated by the entire statement instead
+ of being terminated at the devisble by 2 and greather than condition, i came to this solution by writing code for another problem and realizing that the
+ condition which needs to produce the most "conditioned" output at the beginning of the statement
+*/
