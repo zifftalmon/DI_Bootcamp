@@ -81,12 +81,12 @@ const letter = 'o'.repeat(oNum);
 function oCount() {
 if (oNum <= 2) {
     return word;
-} else if  (oNum >= 2&&oNum%2==0){                                                                                               
-    return `b${letter}m!`;
+} else if  (oNum%2 == 0 && oNum%5 == 0){                                                                                               
+    return `B${letter.toUpperCase()}M!`;
 } else if (oNum%5 == 0){
     return `B${letter.toUpperCase()}M`;
-} else if (oNum%2 == 0 && oNum%5 == 0) { 
-    return `B${letter.toUpperCase()}M!`;
+} else if (oNum >= 2 && oNum%2==0) { 
+    return `b${letter}m`;
 } else {
     return 'mooooooo!';
 }
