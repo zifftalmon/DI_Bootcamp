@@ -1,12 +1,12 @@
-const sentence = "shoes are not a bad thing".split(" ");
-const wordNot = sentence[2];
-const wordBad = sentence[4];
-const goodArray = ["good"];
+let sentence = "shoes are not a bad thing";
+const wordNot = sentence.indexOf('not');
+const wordBad = sentence.indexOf('bad');
 
-if (wordNot > wordBad) { 
-    console.log(sentence.splice(0,2, goodArray).concat(goodArray));
+let subs;
+if (wordBad > wordNot) { 
+    subs = sentence.substring(wordNot,wordBad+3);
+    sentence=sentence.replace(subs, 'good');
+    console.log(sentence);
 } else {
-    console.log (sentence.join(" "));
+    console.log (sentence);
 }
-
-console.log()
