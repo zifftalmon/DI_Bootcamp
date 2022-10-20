@@ -5,7 +5,7 @@ const wordBad = sentence.indexOf('bad');
 let subs;
 if (wordBad > wordNot) { 
     subs = sentence.substring(wordNot,wordBad+3);
-    sentence=sentence.replace(subs, 'good');
+    sentence = sentence.replace(subs, 'good');
     console.log(sentence);
 } else {
     console.log (sentence);
