@@ -59,23 +59,27 @@
 let colors = ["red", "blue", "black", "green", "purple"];
 let numbers = [1,2,3,4,5,6];
 let suffixes = ["st", "nd", "rd", "th", "th"];
-{
-for (let i = 0; i < Number.length; i++)
-for (let i = 0; i < colors.length; i++)
-for (let i = 0; i < suffixes.length; i++) {
 
- 
+for (let i = 0; i < Number.length; i++){
+    
+for (let i = 0; i < colors.length; i++){
     if (numbers[i] == 1 && suffixes[i] == suffixes[0]) {
-    console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-    } else if (numbers[i] == 2 && suffixes[i] == suffixes[1]) {
         console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-    } else if (numbers[i] == 3 && suffixes[i] == suffixes[2]) {
-        console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-    } else if (numbers[i] == 4 && suffixes[i] == suffixes[3]) {
-        console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-    } else {
-        console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-    }
+        } else if (numbers[i] == 2 && suffixes[i] == suffixes[1]) {
+            console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+        } else if (numbers[i] == 3 && suffixes[i] == suffixes[2]) {
+            console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+        } else if (numbers[i] == 4 && suffixes[i] == suffixes[3]) {
+            console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+        } else {
+            console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+        } 
+for (let i = 0; i < suffixes.length; i++){
+    
+}
+} 
 
 }
-}
+    
+
+
