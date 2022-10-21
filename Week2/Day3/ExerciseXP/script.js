@@ -122,38 +122,61 @@ made it engage the prompt in the desired manner
 // Check if the sum of Sarah’s and David’s rent is bigger than Dan’s rent. If it is, than increase Dan’s rent to 1200.
 
 
-const building = {
-    numberOfFloors: 4,
-    numberOfAptByFloor: {
-        firstFloor: 3,
-        secondFloor: 4,
-        thirdFloor: 9,
-        fourthFloor: 2,
-    },
-    nameOfTenants: ["Sarah", "Dan", "David"],
-    numberOfRoomsAndRent:  {
-        sarah: [3, 990],
-        dan:  [4, 1000],
-        david: [1, 500],
-    },
+// const building = {
+//     numberOfFloors: 4,
+//     numberOfAptByFloor: {
+//         firstFloor: 3,
+//         secondFloor: 4,
+//         thirdFloor: 9,
+//         fourthFloor: 2,
+//     },
+//     nameOfTenants: ["Sarah", "Dan", "David"],
+//     numberOfRoomsAndRent:  {
+//         sarah: [3, 990],
+//         dan:  [4, 1000],
+//         david: [1, 500],
+//     },
+// }
+
+// let name1 = building["nameOfTenants"][0];
+// let name2 = building["nameOfTenants"][1];
+// let name3 = building["nameOfTenants"][2];
+
+// console.log(building["numberOfFloors"]);
+// console.log(building["numberOfAptByFloor"]["firstFloor"],building["numberOfAptByFloor"]["thirdFloor"])
+// console.log(building["nameOfTenants"][1],building());
+
+// if (building["numberOfRoomsAndRent"]["sarah"][1]
+//  + building["numberOfRoomsAndRent"]["david"][1] > building["numberOfRoomsAndRent"]["dan"][0]) {
+//     building["numberOfRoomsAndRent"]["dan"][1] = 1200;
+//  } else {
+//     console.log(building["numberOfRoomsAndRent"]["dan"][0])
+//  }
+
+//  console.log(building["numberOfRoomsAndRent"]["dan"][1]);
+
+
+//exercise 5
+
+// Create an object called family with a few key value pairs.
+// Using a for in loop, console.log the keys of the object.
+// Using a for in loop, console.log the values of the object.
+
+const family = {
+    mother: "ima",
+    father: "aba",
+    daughter: "michal",
+    daughter2: "talia",
+    daughter3: "shani",
+    son: "yoav",
+    daughter4: "roni",
 }
 
-let name1 = building["nameOfTenants"][0];
-let name2 = building["nameOfTenants"][1];
-let name3 = building["nameOfTenants"][2];
+for (let i in family) {
+    console.log(i);
+}
+for (let j in family) {
+    console.log(family[j]);
+}
 
-console.log(building["numberOfFloors"]);
-console.log(building["numberOfAptByFloor"]["firstFloor"],building["numberOfAptByFloor"]["thirdFloor"])
-console.log(building["nameOfTenants"][1],building());
-
-if (building["numberOfRoomsAndRent"]["sarah"][1]
- + building["numberOfRoomsAndRent"]["david"][1] > building["numberOfRoomsAndRent"]["dan"][0]) {
-    building["numberOfRoomsAndRent"]["dan"][1] = 1200;
- } else {
-    console.log(building["numberOfRoomsAndRent"]["dan"][0])
- }
-
- console.log(building["numberOfRoomsAndRent"]["dan"][1])
-
- 
 
