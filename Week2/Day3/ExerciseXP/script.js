@@ -56,30 +56,55 @@
 // Bonus: Change it to console.log “My 1st choice”, “My 2nd choice”, “My 3rd choice”, picking the correct suffix for each number.
 // Hint : create an array of suffixes to do the Bonus
 
-let colors = ["red", "blue", "black", "green", "purple"];
-let numbers = [1,2,3,4,5,6];
-let suffixes = ["st", "nd", "rd", "th", "th"];
+// let colors = ["red", "blue", "black", "green", "purple"];
+// let numbers = [1,2,3,4,5,6];
+// let suffixes = ["st", "nd", "rd", "th", "th"];
 
-for (let i = 0; i < Number.length; i++){
+// for (let i = 0; i < Number.length; i++){
     
-for (let i = 0; i < colors.length; i++){
-    if (numbers[i] == 1 && suffixes[i] == suffixes[0]) {
-        console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-        } else if (numbers[i] == 2 && suffixes[i] == suffixes[1]) {
-            console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-        } else if (numbers[i] == 3 && suffixes[i] == suffixes[2]) {
-            console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-        } else if (numbers[i] == 4 && suffixes[i] == suffixes[3]) {
-            console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-        } else {
-            console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
-        } 
-for (let i = 0; i < suffixes.length; i++){
-    
+// for (let i = 0; i < colors.length; i++){
+//     if (numbers[i] == 1 && suffixes[i] == suffixes[0]) {
+//         console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+//         } else if (numbers[i] == 2 && suffixes[i] == suffixes[1]) {
+//             console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+//         } else if (numbers[i] == 3 && suffixes[i] == suffixes[2]) {
+//             console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+//         } else if (numbers[i] == 4 && suffixes[i] == suffixes[3]) {
+//             console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+//         } else {
+//             console.log(`My ${numbers[i]}${suffixes[i]} choice is ${colors[i]}`);
+//         } 
+// for (let i = 0; i < suffixes.length; i++){    
+// }
+// } 
+// }
+    /*
+    by reading and exercising nesting loops i managed to better undestand how to change the code
+    in order for the final log to show just once
+    */
+
+//exercise 3 
+
+// Prompt the user for a number.
+// Hint : Check the data type you receive from the prompt (ie. Use the typeof method)
+
+// While the number is smaller than 10 continue asking the user for a new number.
+// Tip : Which while loop is more relevant for this situation?
+
+let number = Number(prompt("Enter a number Please"));
+
+
+while (number < 10){
+number = prompt("Enter a Number Please");
+    if (number >= 10) 
+    break;
 }
-} 
 
-}
-    
-
-
+/*
+i struggled with this problem, to solve it i realized i need a nested while loop, but then trying to assign an action that re asks the question without malfunctioning the 
+loop was difficult, when i would prompt another message, after a few iterations the loop would behave abnormally, after which if i would
+input a number higher than 10 the prompt window would still appear.
+i then tried to reinitiate the number varialbe inside of the loop as it's action, this manage to 
+solve the problem so that the loop would behave as desired, since re-initiating the number when it's bound to the condition
+made it engage the prompt in the desired manner
+*/
