@@ -162,21 +162,32 @@ made it engage the prompt in the desired manner
 // Using a for in loop, console.log the keys of the object.
 // Using a for in loop, console.log the values of the object.
 
-const family = {
-    mother: "ima",
-    father: "aba",
-    daughter: "michal",
-    daughter2: "talia",
-    daughter3: "shani",
-    son: "yoav",
-    daughter4: "roni",
-}
+// const family = {
+//     mother: "ima",
+//     father: "aba",
+//     daughter: "michal",
+//     daughter2: "talia",
+//     daughter3: "shani",
+//     son: "yoav",
+//     daughter4: "roni",
+// }
 
-for (let i in family) {
-    console.log(i);
-}
-for (let j in family) {
-    console.log(family[j]);
-}
+// for (let i in family) {
+//     console.log(i);
+// }
+// for (let j in family) {
+//     console.log(family[j]);
+// }
 
 
+//Exercise 6
+
+const details = {
+    my: 'name',
+    is: 'Rudolf',
+    the: 'raindeer'
+  }
+
+  for (let i in details) {
+    console.log(i, details[i]);
+  }
