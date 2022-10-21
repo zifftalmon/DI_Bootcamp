@@ -17,3 +17,11 @@ for (let i = 0; i < 1; i++) {
   }
 
 }
+/////////////////////////// CHECKER
+THE SALUTION WAS SUPPOSED TO LOOK SOMETHING LIKE THIS
+const max = 6
+let stars = ""
+for(let index = 0; index < max; index++){
+    stars = stars + " * "
+    console.log(stars)
+}
