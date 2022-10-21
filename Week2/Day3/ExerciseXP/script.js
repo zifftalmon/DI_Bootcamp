@@ -91,14 +91,14 @@
 // While the number is smaller than 10 continue asking the user for a new number.
 // Tip : Which while loop is more relevant for this situation?
 
-let number = Number(prompt("Enter a number Please"));
+// let number = Number(prompt("Enter a number Please"));
 
 
-while (number < 10){
-number = prompt("Enter a Number Please");
-    if (number >= 10) 
-    break;
-}
+// while (number < 10){
+// number = prompt("Enter a Number Please");
+//     if (number >= 10) 
+//     break;
+// }
 
 /*
 i struggled with this problem, to solve it i realized i need a nested while loop, but then trying to assign an action that re asks the question without malfunctioning the 
@@ -108,5 +108,51 @@ i then tried to reinitiate the number varialbe inside of the loop as it's action
 solve the problem so that the loop would behave as desired, since re-initiating the number when it's bound to the condition
 made it engage the prompt in the desired manner
 */
+
+//Exercise 4 
+
+// Copy and paste the above object to your Javascript file.
+
+// Console.log the number of floors in the building.
+
+// Console.log how many apartments are on the floors 1 and 3.
+
+// Console.log the name of the second tenant and the number of rooms he has in his apartment.
+
+// Check if the sum of Sarah’s and David’s rent is bigger than Dan’s rent. If it is, than increase Dan’s rent to 1200.
+
+
+const building = {
+    numberOfFloors: 4,
+    numberOfAptByFloor: {
+        firstFloor: 3,
+        secondFloor: 4,
+        thirdFloor: 9,
+        fourthFloor: 2,
+    },
+    nameOfTenants: ["Sarah", "Dan", "David"],
+    numberOfRoomsAndRent:  {
+        sarah: [3, 990],
+        dan:  [4, 1000],
+        david: [1, 500],
+    },
+}
+
+let name1 = building["nameOfTenants"][0];
+let name2 = building["nameOfTenants"][1];
+let name3 = building["nameOfTenants"][2];
+
+console.log(building["numberOfFloors"]);
+console.log(building["numberOfAptByFloor"]["firstFloor"],building["numberOfAptByFloor"]["thirdFloor"])
+console.log(building["nameOfTenants"][1],building["numberOfRoomsAndRent"]["dan"][0]);
+
+if (building["numberOfRoomsAndRent"]["sarah"][1]
+ + building["numberOfRoomsAndRent"]["david"][1] > building["numberOfRoomsAndRent"]["dan"][0]) {
+    building["numberOfRoomsAndRent"]["dan"][1] = 1200;
+ } else {
+    console.log(building["numberOfRoomsAndRent"]["dan"][0])
+ }
+
+ console.log(building["numberOfRoomsAndRent"]["dan"][1])
 
 
