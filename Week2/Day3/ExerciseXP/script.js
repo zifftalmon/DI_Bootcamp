@@ -182,12 +182,21 @@ made it engage the prompt in the desired manner
 
 //Exercise 6
 
-const details = {
-    my: 'name',
-    is: 'Rudolf',
-    the: 'raindeer'
-  }
+// const details = {
+//     my: 'name',
+//     is: 'Rudolf',
+//     the: 'raindeer'
+//   }
 
-  for (let i in details) {
-    console.log(i, details[i]);
-  }
+//   for (let i in details) {
+//     console.log(i, details[i]);
+//   }
+
+//Exercise 7 
+
+const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"].sort();
+
+for (let i of names) {
+    console.log(i[0]);
+}
+
