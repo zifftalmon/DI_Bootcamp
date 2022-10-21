@@ -108,3 +108,5 @@ i then tried to reinitiate the number varialbe inside of the loop as it's action
 solve the problem so that the loop would behave as desired, since re-initiating the number when it's bound to the condition
 made it engage the prompt in the desired manner
 */
+
+
