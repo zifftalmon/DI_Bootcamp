@@ -130,17 +130,15 @@ const prices = {
 
 const shoppingList = ["banana", "orange", "apple"];
 
-// function myBill() {
-//     let sum = 0;
-//     for (let i = 0; i < shoppingList.length; i++){ 
-//     if(shoppingList in stock && shoppingList in prices){
-//     }
-//     }return sum += prices["shoppingList"];
-// }
+function myBill() {{
+    if(shoppingList in stock){
+    }return prices[shoppingList[0]] + prices[shoppingList[1]] + prices[shoppingList[2]];
+}
+}
 
-// let bill = myBill();
-// console.log(bill);
+let bill = myBill();
+console.log(bill);
 
-for (let i = 0; i < shoppingList.length; i++);
-prices = shoppingList[i];
-console.log(prices);
+
+//Exercise 5
+
