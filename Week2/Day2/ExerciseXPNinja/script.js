@@ -31,13 +31,21 @@ the outcome of such subtraction, after realizing that all i had to do is write a
 
 let zipCode = prompt("Please enter your zip code");
 
-let string = [/"a-zA-Z"/];
+let letter = zipCode.match("[a-z]+");
 
-if (zipCode.length === 5 && zipCode.trim() && zipCode.includes(string) !== zipCode) {
+if (zipCode.length === 5 && zipCode.trim()&& zipCode.includes(letter) === false) {
     console.log("success");
 } else {
     console.log("error");
 }
-
-console.log(string);
 console.log(zipCode);
+
+/*
+to solve this problem without regex, i tried using a variable with value of string
+to make sure the condition of the input not having any letters will log success, this was difficult
+since the input from the prompt is a string in it's self, i looked online anf found that
+in order to check for alphabetical values without regex i need to use the "[a-z]+" syntax,
+this led me to try this syntax with different string methods inside the if statement, however this did not work, then,
+i tries assigning a variable the value of the input and see if it matches any alphabetical values, and i implemeted that variable
+inside the if statement, and that worked 
+*/
