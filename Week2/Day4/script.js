@@ -112,33 +112,56 @@
 
 // Bonus: If the item is in stock, decrease the item’s stock by 1
 
-const stock = { 
-    "banana": 6, 
-    "apple": 0,
-    "pear": 12,
-    "orange": 32,
-    "blueberry":1
-}  
 
-const prices = {    
-    "banana": 4, 
-    "apple": 2, 
-    "pear": 1,
-    "orange": 1.5,
-    "blueberry":10
-} 
+// const stock = { 
+//     "banana": 6, 
+//     "apple": 0,
+//     "pear": 12,
+//     "orange": 32,
+//     "blueberry":1
+// }  
 
-const shoppingList = ["banana", "orange", "apple"];
+// const prices = {    
+//     "banana": 4, 
+//     "apple": 2, 
+//     "pear": 1,
+//     "orange": 1.5,
+//     "blueberry":10
+// } 
+// const shoppingList = ["banana", "orange", "apple"];
 
-function myBill() {{
-    if(shoppingList in stock){
-    }return prices[shoppingList[0]] + prices[shoppingList[1]] + prices[shoppingList[2]];
-}
-}
+// function myBill() {
+//     let sum = 0;
+//     for (let i = 0; i < shoppingList.length; i++){
+//         if(shoppingList[i] in stock)
+//          sum += prices[shoppingList[i]]; 
+//     }
+//     return  sum;
+// }
 
-let bill = myBill();
-console.log(bill);
 
+// let bill = myBill();
+// console.log(bill);
+
+/*
+this exercise was very challneging, i had trouble figuring out the order in which the different statements and loops
+were needed to be placed, my first variation was : no sum variable,first the for loop, enclosing the if..in statement which had an else statement and the return statement,
+this led to the loop running and outputting only the vlaue of the property "banana" from the proces object, only after consulting a fellow progarammer and searching
+the web i realized i need another variable of sum assigned with zero to re-assign with the sum of the prices of the shoppinList, and enclosing the if..in statement with the re-assigning
+of sum inside the loop, leacing the return statement in the scope of the function, that way, the loop goes over the shoppingList, then, checks if the content of the shoppingList
+is in stock, and then, sums the prices of those items and returns them added to each other 
+*/
 
 //Exercise 5
 
+// Create a function named changeEnough(itemPrice, amountOfChange) that receives two arguments :
+// an item price
+// and an array representing the amount of change in your pocket.
+
+// In the function, determine whether or not you can afford the item.
+// If the sum of the change is bigger or equal than the item’s price (ie. it means that you can afford the item), the function should return true
+// If the sum of the change is smaller than the item’s price (ie. it means that you cannot afford the item) the function should return false
+
+// Change will always be represented in the following order: quarters, dimes, nickels, pennies.
+
+ 
