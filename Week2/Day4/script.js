@@ -112,7 +112,6 @@
 
 // Bonus: If the item is in stock, decrease the item’s stock by 1
 
-
 const stock = { 
     "banana": 6, 
     "apple": 0,
@@ -131,4 +130,17 @@ const prices = {
 
 const shoppingList = ["banana", "orange", "apple"];
 
+// function myBill() {
+//     let sum = 0;
+//     for (let i = 0; i < shoppingList.length; i++){ 
+//     if(shoppingList in stock && shoppingList in prices){
+//     }
+//     }return sum += prices["shoppingList"];
+// }
 
+// let bill = myBill();
+// console.log(bill);
+
+for (let i = 0; i < shoppingList.length; i++);
+prices = shoppingList[i];
+console.log(prices);
