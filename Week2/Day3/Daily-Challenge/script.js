@@ -1,4 +1,4 @@
-for (let i = 0; i < 1; i++) {
+for (let i = " * "; i < 1; i++) {
     console.log(i);
   for(let j = 0; j < 1; j++) {
     console.log(i,j);
@@ -17,11 +17,18 @@ for (let i = 0; i < 1; i++) {
   }
 
 }
-/////////////////////////// CHECKER
-THE SALUTION WAS SUPPOSED TO LOOK SOMETHING LIKE THIS
-const max = 6
-let stars = ""
-for(let index = 0; index < max; index++){
+
+const maximum = 6;
+let stars = "";
+for (let i = 0; i < maximum; i++) {
     stars = stars + " * "
-    console.log(stars)
+    console.log(stars);
 }
+/////////////////////////// CHECKER
+// THE SALUTION WAS SUPPOSED TO LOOK SOMETHING LIKE THIS
+// const max = 6;
+// let stars = "";
+// for(let index = 0; index < max; index++){
+//     stars = stars + " * "
+//     console.log(stars)
+// }
