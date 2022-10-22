@@ -29,17 +29,30 @@ the outcome of such subtraction, after realizing that all i had to do is write a
 // Must not contain any whitespace (spaces)
 // Must not be greater than 5 digits in length
 
+// let zipCode = prompt("Please enter your zip code");
+
+// let letter = zipCode.match("[a-z]+");
+
+// if (zipCode.length === 5 && zipCode.trim()&& zipCode.includes(letter) === false) {
+//     console.log("success");
+// } else {
+//     console.log("error");
+// }
+// console.log(zipCode);
+
 let zipCode = prompt("Please enter your zip code");
 
-let letter = zipCode.match("[a-z]+");
+let zipCheck = /^[a-z]+/i;
 
-if (zipCode.length === 5 && zipCode.trim()&& zipCode.includes(letter) === false) {
-    console.log("success");
-} else {
-    console.log("error");
-}
-console.log(zipCode);
+let letter = zipCode.match(zipCheck);
 
+if (zipCode.length === 5 && zipCode.includes(letter)) {
+        console.log("success");
+    } else {
+        console.log("error");
+    }
+
+console.log(letter);
 /*
 to solve this problem without regex, i tried using a variable with value of string
 to make sure the condition of the input not having any letters will log success, this was difficult
@@ -49,3 +62,4 @@ this led me to try this syntax with different string methods inside the if state
 i tries assigning a variable the value of the input and see if it matches any alphabetical values, and i implemeted that variable
 inside the if statement, and that worked 
 */
+
