@@ -44,15 +44,42 @@
 
 // Call the calculateTip() function.
 
-function calculateTip() {
-    let bill = Number(prompt("How much is the bill?"));
-    if (bill < 50) {
-        return bill * 0.2;
-    } else if (bill > 50 && bill < 200) {
-        return bill * 0.15;
-    } else {
-        return bill * 0.1;
+// function calculateTip() {
+//     let bill = Number(prompt("How much is the bill?"));
+//     if (bill < 50) {
+//         return bill * 0.2;
+//     } else if (bill > 50 && bill < 200) {
+//         return bill * 0.15;
+//     } else {
+//         return bill * 0.1;
+//     }
+// }
+// let finalBill = calculateTip();
+// console.log(finalBill);
+
+//Exercise3
+
+// Exercise 3 : Find The Numbers Divisible By 23
+// Instructions
+// Create a function call isDivisible() that takes no parameter.
+
+// In the function, loop through numbers 0 to 500.
+
+// Console.log all the numbers divisible by 23.
+
+// At the end, console.log the sum of all numbers that are divisible by 23.
+
+//Exercise4
+
+function isDivisible(){
+    let sum = 0;
+    for (let i = 0; i < 500; i++) {
+        if(i % 23 == 0) {
+            sum += i;
+            console.log(i, sum);
+            
+        }
     }
 }
-let finalBill = calculateTip();
-console.log(finalBill);
+isDivisible();
+
