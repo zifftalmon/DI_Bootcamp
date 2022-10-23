@@ -201,7 +201,7 @@ is in stock, and then, sums the prices of those items and returns them added to 
 //        } return 140 * numberOfNights;
 // }
 // let nightCost = hotelCost();
-// console.log(nightCost);
+// console.log(nightCost);  
 
 /*
 to solve this exercise i realize i'd need a function, with some kind of loop nested inside. i tried using a for loop but realize that this will
@@ -212,8 +212,9 @@ wrapper logs NaN, which is also a type number, and this returned NaN. finally, i
 considition to (> 0) so that only numbers above 0 and not NaN will get multiplied by 140 and return the cost of the hotel
 */
 
-// let destination = prompt("where do you want to fly?").toLowerCase();
+
 // function planeRideCost() {
+// let destination = prompt("where do you want to fly?").toLowerCase();
 //     while (destination == "" || destination.match("[0-9]+")) {
 //         destination = prompt("where do you want to fly?").toLowerCase();
 //     }
@@ -234,15 +235,17 @@ considition to (> 0) so that only numbers above 0 and not NaN will get multiplie
 the problem i faced in this exercise was to find a way to make sure the the question is prompted when a number is inputted, to solve this, i used the match method
 to see if the prompt input contains any numbers
 */
-let numberOfDays = prompt("How many days will you be renting a car?");
-function rentalCarCost () {
-    while (numberOfDays == "" || numberOfDays !== NaN) {
-        numberOfDays = prompt("How many days will you be renting a car?");
-        if (numberOfDays > 0 && numberOfDays < 10)
-        return 40 * numberOfDays;
-        else if (numberOfDays > 10)
-        return (40 * numberOfDays)-((40 * 0.05)*11)}
-    }
-let carCost = rentalCarCost();
-console.log(carCost);
+
+// function rentalCarCost () {
+// let numberOfDays = prompt("How many days will you be renting a car?");
+//     while (numberOfDays == "" || numberOfDays !== NaN) {
+//         numberOfDays = prompt("How many days will you be renting a car?");
+//         if (numberOfDays > 0 && numberOfDays <= 10)
+//         return 40 * numberOfDays;
+//         else if (numberOfDays > 10)
+//         return (40 * numberOfDays)-((40 * 0.05)*11)
+//     }
+//     }
+// let carCost = rentalCarCost();
+// console.log(carCost);
 
