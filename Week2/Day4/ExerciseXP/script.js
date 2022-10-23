@@ -1,3 +1,4 @@
+
 //Exercise 1
 
 // Part I : function with no parameters
@@ -165,11 +166,15 @@ is in stock, and then, sums the prices of those items and returns them added to 
 // Change will always be represented in the following order: quarters, dimes, nickels, pennies.
 
  function closeEnough (itemPrice, amountOfChange) {
-    if (amountOfChange > itemPrice) {
+    let change = [0.25, 0.10, 0.05, 0.01];
+    for (let j = 0; j < change.length; j++)
+    for (let i = 0; i < amountOfChange.length; i++)
+    if (itemPrice < amountOfChange[i]*change[j]) {
         return true;
     } else {
-        return false
+        return false;
     }
- }
-
- closeEnough(4.24, [25, 20, 5, 0]);
+    
+}
+ let price = closeEnough(0.75, [0, 0, 20, 5]);
+ console.log(price);
