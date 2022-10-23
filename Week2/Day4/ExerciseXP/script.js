@@ -191,13 +191,40 @@ is in stock, and then, sums the prices of those items and returns them added to 
 
 
  //Exercise 6
-    let numberOfNights = prompt("How many nights would you like to stay?");
- function hotelCost () {
-    while (numberOfNights == "" || numberOfNights !== NaN) {
-        numberOfNights = prompt("How many nights would you like to stay?");
-        if (numberOfNights > 0)
-        break;
-        } return 140 * numberOfNights;
+// let numberOfNights = prompt("How many nights would you like to stay?");
+// function hotelCost () {
+//    while (numberOfNights == "" || numberOfNights !== NaN) {
+//        numberOfNights = prompt("How many nights would you like to stay?");
+//        if (numberOfNights > 0)
+//        break;
+//        } return 140 * numberOfNights;
+// }
+// let nightCost = hotelCost();
+// console.log(nightCost);
+
+/*
+to solve this exercise i realize i'd need a function, with some kind of loop nested inside. i tried using a for loop but realize that this will
+require an end condition and won't be very useful to repeat a question again and again, i remembered we had a similar exercise on day 3,
+which asks a question and while the number is smaller than 10, the question is asked again and again, i decided using a while loop, this helped but at 
+first would not react to any input, to solve this, i tries to change the type of the input to number, this didn't help either since inputting a string in a number 
+wrapper logs NaN, which is also a type number, and this returned NaN. finally, i tried changing the consition to (!== NaN) so it will promptthe question again, and changed the if statement's
+considition to (> 0) so that only numbers above 0 and not NaN will get multiplied by 140 and return the cost of the hotel
+*/
+
+let destination = prompt("where do you want to fly?").toLowerCase();
+function planeRideCost() {
+    while (destination == "" || destination.match("[0-9]+")) {
+        destination = prompt("where do you want to fly?").toLowerCase();
+    }
+        if (destination == "london") {
+            return "183$"
+        } else if (destination == "paris") {
+            return "220$"
+        } else {
+            return "300$"
+        }
 }
-let cost = hotelCost();
-console.log(cost);
+
+
+let flightCost = planeRideCost();
+console.log(flightCost);
