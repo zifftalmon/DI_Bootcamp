@@ -165,34 +165,39 @@ is in stock, and then, sums the prices of those items and returns them added to 
 
 // Change will always be represented in the following order: quarters, dimes, nickels, pennies.
 
- function closeEnough (itemPrice, amountOfChange) {
-    let change = [0.25, 0.10, 0.05, 0.01];
-    let sum = 0;
-    for (let i = 0; i < amountOfChange.length; i++){  
-    sum += amountOfChange[i] * change[i];
-    }
-    if (itemPrice < sum) {
-        return true;
-    } else {
-        return false;
-    }
-    
-}
- let price = closeEnough(0.75, [0,0,20,5]);
- console.log(price);
-
- 
-
-//  //Exercise 6
-//  let numberOfNights = prompt("How many nights would you like to stay?");
-//  function hotelCost () {
-//     while (numberOfNights == " " || numberOfNights !== typeof Number) {
-//         numberOfNights = prompt ("How many nights would you like to stay?");
-//         if (numberOfNights == typeof Number)
-//         break;
+//  function closeEnough (itemPrice, amountOfChange) {
+//     let change = [0.25, 0.10, 0.05, 0.01];
+//     let sum = 0;
+//     for (let i = 0; i < amountOfChange.length; i++){  
+//     sum += amountOfChange[i] * change[i];
 //     }
-//     return 140 * numberOfNights;
+//     if (itemPrice < sum) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+    
 // }
+//  let price = closeEnough(14.11, [2,100,0,0]);
+//  console.log(price);
 
-// let cost = hotelCost();
-// console.log(cost);
+ /*
+ the way i tries to solve this exercise at first was to use two loops, one to loop over the amountOfChange and the over to loop over
+ thechange array, and then multiply each array by the other, problem was, no loop was closing the claculations, as well as having two loops
+ led to them multiplying each others' content leading to undisered function returns, in the end what solved the problem was removing one loop
+ because the arrays which are being looped are the same length, thus using the i variable works for both amountOfChange & change arrays
+ */
+
+
+
+ //Exercise 6
+    let numberOfNights = prompt("How many nights would you like to stay?");
+ function hotelCost () {
+    while (numberOfNights == "" || numberOfNights !== NaN) {
+        numberOfNights = prompt("How many nights would you like to stay?");
+        if (numberOfNights > 0)
+        break;
+        } return 140 * numberOfNights;
+}
+let cost = hotelCost();
+console.log(cost);
