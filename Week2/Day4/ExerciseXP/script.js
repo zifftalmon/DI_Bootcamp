@@ -190,9 +190,10 @@ is in stock, and then, sums the prices of those items and returns them added to 
 
 
 
- //Exercise 6
-// let numberOfNights = prompt("How many nights would you like to stay?");
+//  Exercise 6
+
 // function hotelCost () {
+//     let numberOfNights = prompt("How many nights would you like to stay?");
 //    while (numberOfNights == "" || numberOfNights !== NaN) {
 //        numberOfNights = prompt("How many nights would you like to stay?");
 //        if (numberOfNights > 0)
@@ -211,20 +212,37 @@ wrapper logs NaN, which is also a type number, and this returned NaN. finally, i
 considition to (> 0) so that only numbers above 0 and not NaN will get multiplied by 140 and return the cost of the hotel
 */
 
-let destination = prompt("where do you want to fly?").toLowerCase();
-function planeRideCost() {
-    while (destination == "" || destination.match("[0-9]+")) {
-        destination = prompt("where do you want to fly?").toLowerCase();
+// let destination = prompt("where do you want to fly?").toLowerCase();
+// function planeRideCost() {
+//     while (destination == "" || destination.match("[0-9]+")) {
+//         destination = prompt("where do you want to fly?").toLowerCase();
+//     }
+//         if (destination == "london") {
+//             return "183$"
+//         } else if (destination == "paris") {
+//             return "220$"
+//         } else {
+//             return "300$"
+//         }
+// }
+
+
+// let flightCost = planeRideCost();
+// console.log(flightCost);
+
+/*
+the problem i faced in this exercise was to find a way to make sure the the question is prompted when a number is inputted, to solve this, i used the match method
+to see if the prompt input contains any numbers
+*/
+let numberOfDays = prompt("How many days will you be renting a car?");
+function rentalCarCost () {
+    while (numberOfDays == "" || numberOfDays !== NaN) {
+        numberOfDays = prompt("How many days will you be renting a car?");
+        if (numberOfDays > 0 && numberOfDays < 10)
+        return 40 * numberOfDays;
+        else if (numberOfDays > 10)
+        return (40 * numberOfDays)-((40 * 0.05)*11)}
     }
-        if (destination == "london") {
-            return "183$"
-        } else if (destination == "paris") {
-            return "220$"
-        } else {
-            return "300$"
-        }
-}
+let carCost = rentalCarCost();
+console.log(carCost);
 
-
-let flightCost = planeRideCost();
-console.log(flightCost);
