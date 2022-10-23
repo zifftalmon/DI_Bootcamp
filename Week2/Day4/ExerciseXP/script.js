@@ -167,14 +167,32 @@ is in stock, and then, sums the prices of those items and returns them added to 
 
  function closeEnough (itemPrice, amountOfChange) {
     let change = [0.25, 0.10, 0.05, 0.01];
-    for (let j = 0; j < change.length; j++)
-    for (let i = 0; i < amountOfChange.length; i++)
-    if (itemPrice < amountOfChange[i]*change[j]) {
+    let sum = 0;
+    for (let i = 0; i < amountOfChange.length; i++){  
+    sum += amountOfChange[i] * change[i];
+    }
+    if (itemPrice < sum) {
         return true;
     } else {
         return false;
     }
     
 }
- let price = closeEnough(0.75, [0, 0, 20, 5]);
+ let price = closeEnough(0.75, [0,0,20,5]);
  console.log(price);
+
+ 
+
+//  //Exercise 6
+//  let numberOfNights = prompt("How many nights would you like to stay?");
+//  function hotelCost () {
+//     while (numberOfNights == " " || numberOfNights !== typeof Number) {
+//         numberOfNights = prompt ("How many nights would you like to stay?");
+//         if (numberOfNights == typeof Number)
+//         break;
+//     }
+//     return 140 * numberOfNights;
+// }
+
+// let cost = hotelCost();
+// console.log(cost);
