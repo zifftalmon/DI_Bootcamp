@@ -195,7 +195,7 @@ is in stock, and then, sums the prices of those items and returns them added to 
 // function hotelCost () {
 //     let numberOfNights = prompt("How many nights would you like to stay?");
 //    while (numberOfNights == "" || numberOfNights !== NaN) {
-//        numberOfNights = prompt("How many nights would you like tx`o stay?");
+//        numberOfNights = prompt("How many nights would you like to stay?");
 //        if (numberOfNights > 0)
 //        break;
 //        } return 140 * numberOfNights;
