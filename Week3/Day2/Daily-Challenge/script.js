@@ -17,7 +17,7 @@ form.addEventListener('submit' ,function(e) {
 }
 }
 )
-
+    
 /*
 this was an interesting exercise, i began with the same syntax that is present, when i tried to 
 make the code a bit more efficient with a for loop it looped the click as well, this was not very easy to solve but idecideed
