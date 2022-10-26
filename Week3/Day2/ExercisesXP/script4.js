@@ -1,24 +1,18 @@
-let myForm = document.forms[0];
+let form = document.getElementById("myForm");
+let radius = document.getElementById("radius");
+let volume = document.getElementById("volume");
 
-let radius = document.getElementsByTagName("input")[0].value;
+form.addEventListener("submit",volumeValue);
 
-let volume = document.getElementsByTagName("input")[1];
+function volumeValue(e){
+    e.preventDefault ();
+    const r = Number(radius.value);
+    if(Number.isNaN(r)) return;
+    const v = (4 / 3) * Math.PI * r **3;
+    volume.value = v;
+    console.log(v);
+}
 
-let submit = document.getElementsByTagName("input")[2];
-
-let result = 0;
-
-const pi = 3.14159;
-
-submit.addEventListener("click", function() {
-    result = (4 / 3 * pi) * (radius * 3)
-    volume.appendChild.result;
-    console.log(result);  
-})
-
-console.log(result);  
-
-console.log(radius);  
 
 
 
