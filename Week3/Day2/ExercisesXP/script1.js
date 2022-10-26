@@ -17,16 +17,16 @@ let title = document.querySelector("h1");
 
 console.log(title);
 
-let para = document.querySelector("p")[2];
+let para = document.getElementsByTagName("p")[2];
 
 para.remove();
 
-let h2 = document.querySelector("h2");
+let title2 = document.querySelector("h2");
 
-h2.addEventListener("click", redBg);
+title2.addEventListener("click", redBg);
 
 function redBg() {
-    h2.style.backgroundColor = "red";
+    title2.style.backgroundColor = "red";
 }
 
 let h3 = document.querySelector("h3");
@@ -44,3 +44,20 @@ button.addEventListener("click", boldText);
 function boldText() {
     document.body.style.fontWeight = "bold";
 }
+
+function random(number) {
+    return Math.floor(Math.random() * 100) + 1;
+}
+
+title.addEventListener("mouseover", randomSize);
+
+function randomSize() {
+    title.style.fontSize = `${random(100)}px`;
+}
+
+title2.addEventListener("mouseover", fadeOut);
+
+function fadeOut() {
+    title2.setAttribute("class", "fade-in");
+}
+
