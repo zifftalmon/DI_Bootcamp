@@ -1,30 +1,30 @@
- 
-let myForm = document.forms[0];
-myForm.addEventListener('submit', function(e) {
-e.preventDefault();
-     let myForm = document.forms[0];
-     console.log(myForm);
+let allBoldItems;
 
-     document.forms[0].fname;
-     let ulHtml = document.querySelector(".usersAnswer");
-     console.log(ulHtml);
-     let firstInput = myForm.elements.fname;
-     let secondInput = myForm.elements.lname;
+function getBold_items() {
+    let boldList = document.querySelectorAll("strong");
+    allBoldItems = boldList    
+}
+getBold_items();
 
-     let firstInputValue = firstInput.value;
-     let secondInputValue = secondInput.Value;
-     if (firstInputValue !== "" && secondInputValue !== "")
-      {
-     let firstLi = document.createElement("li");
-     firstLi.textContent = firstInputValue;
-     ulHtml.appendChild(firstLi);
+function highlight(color) {
+    for(let i = 0; i < allBoldItems.length; i++) {
+        allBoldItems[i].style.color = "blue";
+    }
+}
+
+function return_normal(color) {
+    for(let i = 0; i< allBoldItems.length; i++) {
+        allBoldItems[i].style.color = "black";
+    }
+}
 
 
-     let secondLi = document.createElement("li");     
-     secondLi.textContent = secondInputValue;
-     ulHtml.appendChild(secondLi);
-     
-     } else {
-     console.log("there is no input")
-     return 
-  }});
+let p = document.querySelector("p");
+
+p.addEventListener("mouseover", highlight);
+p.addEventListener("mouseout", return_normal);
+
+
+
+
+
