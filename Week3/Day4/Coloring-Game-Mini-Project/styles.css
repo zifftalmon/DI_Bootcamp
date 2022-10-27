@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+#colors {
+    width: 20%;
+    border: 3px solid red;
+}
+
+#white {
+    width: 80%;
+    border: 3px solid red;
+}
