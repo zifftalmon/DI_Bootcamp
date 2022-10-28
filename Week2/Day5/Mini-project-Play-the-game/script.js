@@ -7,7 +7,7 @@ function playTheGame () {
     
     
 let computerNumber = hiddenNumber(); 
-let input = prompt("please Enter a Number");
+let input = prompt("please Enter a Number between 1-10");
 let userNumber = input;
 let tries = 0;
 while (userNumber != computerNumber) {
@@ -27,11 +27,11 @@ if(range(userNumber)) {
 }
 
 if (userNumber > computerNumber) {
-    alert("Your number is bigger then the computer's, guess again");
+    alert("Your number is bigger than the computer's, guess again");
 }
 
 if (userNumber < computerNumber) {
-    alert("Your number is smaller then the computer's, guess again");
+    alert("Your number is smaller than the computer's, guess again");
 }
 userNumber = prompt("please Enter a Number");
 }
@@ -48,7 +48,7 @@ function numberValidity (str) {
  }
  
  function range (number) {
-     return number >= 10 || number <= 0;
+     return number >= 11 || number <= -1;
  }
  
  function hiddenNumber () {
