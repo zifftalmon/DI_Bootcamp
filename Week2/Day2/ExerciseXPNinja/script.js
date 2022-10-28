@@ -40,19 +40,19 @@ the outcome of such subtraction, after realizing that all i had to do is write a
 // }
 // console.log(zipCode);
 
-let zipCode = prompt("Please enter your zip code");
+// let zipCode = prompt("Please enter your zip code");
 
-let zipCheck = /^[a-z]+/i;
+// let zipCheck = /^[a-z]+/i;
 
-let letter = zipCode.match(zipCheck);
+// let letter = zipCode.match(zipCheck);
 
-if (zipCode.length === 5 && zipCode.includes(letter)) {
-        console.log("success");
-    } else {
-        console.log("error");
-    }
+// if (zipCode.length === 5 && zipCode.includes(letter)) {
+//         console.log("success");
+//     } else {
+//         console.log("error");
+//     }
 
-console.log(letter);
+// console.log(letter);
 /*
 to solve this problem without regex, i tried using a variable with value of string
 to make sure the condition of the input not having any letters will log success, this was difficult
@@ -63,3 +63,21 @@ i tries assigning a variable the value of the input and see if it matches any al
 inside the if statement, and that worked 
 */
 
+//Exercise3 
+
+// Hint : Use Regular Expressions
+
+// Prompt the user for a word and save it to a variable.
+// Delete all the vowels of the word and console.log the result.
+// Bonus: Replace the vowels with another character and console.log the result
+
+
+let input = prompt("please enter a word");
+
+function noVowel () {
+if (input.match(/[aeiou]/gi)) {
+   return input.replace(/[aeiou]/gi, "");
+} 
+}
+console.log(noVowel());
+        
