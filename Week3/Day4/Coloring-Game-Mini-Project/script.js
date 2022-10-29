@@ -41,7 +41,7 @@ createColorBox();
 
 let clearBtn = document.getElementById("clearButton");
     function clearPage() {
-      window.location.reload();
+    window.location.reload();
 }
 clearBtn.addEventListener("click", clearPage)
  
