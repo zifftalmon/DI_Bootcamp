@@ -7,11 +7,54 @@ body {
 }
 
 #colors {
+    box-sizing: content-box;
     width: 20%;
-    border: 3px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    align-items: center;
+    justify-items: center;
+    background-color: grey;
+}
+
+#clear {
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: inherit;
+}
+
+#clearButton {
+    width: 19vw;
+    height: 10vh;
+    padding: 10px;
+    position: relative;
+    right: 78px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black; 
+}
+.box {
+    margin-bottom: 10px;
+    width: 75px;
+    height: 80px;
+    border: 1px solid black;
 }
 
 #white {
+    margin:0;
     width: 80%;
-    border: 3px solid red;
+    border: 6px solid gray;
+    display: grid;
+    grid-template-columns: repeat(59, 10px);
+    grid-template-rows: repeat(33, 10px);
+    row-gap: 12px;
+    column-gap: 7px;
+    padding: 0;
+    
+}
+
+.whitebox {
+    width: 15px;
+    height: 20px;
+    border: 1px solid rgb(180, 172, 172)
 }
