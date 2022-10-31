@@ -17,13 +17,17 @@
 
 
 
+let div = document.getElementById("container");
 
 function newPara() {
-    let div = document.getElementById("container");
     let newP = document.createElement("p");
     let hello = document.createTextNode("Hello World");
     newP.appendChild(hello);
+    if(div.childNodes.length < 5) {
     div.appendChild(newP)
+    } else {
+        clearInterval(timer);
+    }
 }
 
 let button = document.getElementById("clear");
@@ -34,12 +38,6 @@ console.log("stop");
 }
 
 button.addEventListener("click", clearButton)
-let timer = setInterval(newPara, 2000);
+let timer = setInterval(newPara, 1000);
 
-let pCount = document.querySelectorAll("p");
-
-function pInterval () {
-    if (pCount == 5) {
-        clearInterval(timer);
-    }
-}
+console.log(timer);
