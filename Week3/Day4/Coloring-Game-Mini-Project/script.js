@@ -26,12 +26,15 @@ function createColorBox () {
             white.appendChild(whiteBox);
             whiteBox.setAttribute("class", "whitebox")
             function addColor (event) {
-                event.preventDefault();
+                if(event.button === 0) {
                 whiteBox.style.background = colorBox.id;
-                console.log(colorBox.id)
+                console.log(event.button)
+                } 
+                
             }
-            whiteBox.addEventListener("click", addColor);
-            whiteBox.addEventListener("mousemove", addColor);        
+            whiteBox.addEventListener("click", addColor);    
+            whiteBox.addEventListener("onmouseover", addColor);
+
         }
 
     }
