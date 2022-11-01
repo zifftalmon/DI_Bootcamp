@@ -27,3 +27,4 @@ let cloneGroceries = () => {
     console.log(shopping);
     console.log(groceries);
 }
+cloneGroceries();
