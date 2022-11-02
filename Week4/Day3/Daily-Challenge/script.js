@@ -18,7 +18,7 @@ const inventory = [
 //Part II
 
 let sortCarInventoryByYear = (carInventory) => {
-    let yearSort = carInventory.sort ((a,b) => (a.car_year > b.car_year ? 1 : -1))
+    let yearSort = carInventory.sort ((a,b) => (a.car_year > b.car_year ? 1 : -git1))
     return console.log(yearSort);
 }
 sortCarInventoryByYear(inventory);
