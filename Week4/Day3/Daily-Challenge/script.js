@@ -8,9 +8,17 @@ const inventory = [
     { id: 5, car_make: "Honda", car_model: "Accord", car_year: 1995 },
   ];
 
-  let getCarHonda = (carInventory) => {
-  let honda = carInventory.find(car => car.car_make == "Honda");
-  console.log(`This is a ${honda.car_make} ${honda.car_model} from ${honda.car_year}`); 
-}
+//   let getCarHonda = (carInventory) => {
+//   let honda = carInventory.find(car => car.car_make == "Honda");
+//   console.log(`This is a ${honda.car_make} ${honda.car_model} from ${honda.car_year}`); 
+// }
   
-getCarHonda(inventory);
+// getCarHonda(inventory);
+
+//Part II
+
+let sortCarInventoryByYear = (carInventory) => {
+    let yearSort = carInventory.sort ((a,b) => (a.car_year > b.car_year ? 1 : -1))
+    return console.log(yearSort);
+}
+sortCarInventoryByYear(inventory);
