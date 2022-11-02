@@ -43,34 +43,10 @@ let bigger = comparison();
 
 console.log(bigger);
 
-
-// const person1 = {
-//     FullName: "david hasselhof",
-//     Mass: 90,
-//     Height: 1.80,
-//     Bmi: function() {
-//         console.log(this.Mass / Math.pow(this.Height,2));
-//     },
-// }
-
-// const person2 = {
-//     FullName: "gary hasselhof",
-//     Mass: 110,
-//     Height: 1.40,
-//     Bmi: function() {
-//         console.log(this.Mass / Math.pow(this.Height,2));
-//     },
-// }
-
-// person1.Bmi();
-// person2.Bmi();
-
-// function comparison () {
-//    let bmiNum = Math.max(person1["Bmi"], person2["Bmi"]);
-//    return bmiNum;
-   
-// }
-
-// let bigger = comparison();
-
-// console.log(bigger);
+/*this challenge was hand-bending because, on the surface, it seemed simple to me,
+simply place a function in each object, thus i decided to create two seperate function, this led to
+a mess of too many functions, and wasn't very practical for the end function which had to use the value
+of the bmi propertey, after learning a bit more about functions i realized the most efficient thing to do is
+to create one function in the global scope, utilize it in the bmi propertey of both the function and use that value in the 
+comparison function
+*/
