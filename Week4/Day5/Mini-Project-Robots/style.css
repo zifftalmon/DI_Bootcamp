@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #45dc43;
+    height: 50px;
+}
+#navbar h1 {
+    margin-left: 20px;
+}
+#navbar form {
+    margin-left: 100px;
+}
+#navbar form > input {
+    width: 30vw;
+    height: 5vh;
+}
