@@ -13,7 +13,7 @@
 
 
 class Animal {
-    constructor (name, type="cat", color) {
+    constructor (name, type, color) {
         this.name = name;
         this.type = type;
         this.color = color;
@@ -25,10 +25,10 @@ class Mamal extends Animal {
         super(nameMamal, typeMamal, colorMamal);
     }
 
-    sound(animalSound) {
+    sound() {
         console.log(`${animalSound} I am ${this.name} a ${this.color} ${this.type}`)
     }
 }
 
 const farmerCow = new Mamal ("lily", "cow", "pink");
-farmerCow.sound('moooo')
+farmerCow.sound()
