@@ -116,8 +116,7 @@ for (const robot of robotsArray) {
 }
     console.log(result);
     function addRobots() {
-        robotsArray.forEach ((result) => {
-            let itemPara = document.querySelector("#robotBoxDiv");
+        robotsArray.forEach((result) => {
             let header1 = document.createElement("h2");
             let headerText = document.createTextNode(`${result.name}`);
             let email1 = document.createElement("p");
@@ -126,10 +125,9 @@ for (const robot of robotsArray) {
             image1.setAttribute("src",`${result.image}`);
             header1.append(headerText);
             email1.append(emailText);
-            itemPara.append(image1);
-            itemPara.append(header1);
-            itemPara.append(email1);
+            robotBox.appendChild(image1);
+            robotBox.append(header1);
+            robotBox.append(email1);
         })  
     }
 addRobots();
-    // console.log(i); 

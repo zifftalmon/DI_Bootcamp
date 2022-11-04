@@ -4,6 +4,7 @@
 body {
     background-color: #6e1087;
     background-image: url(circuit-pattern.png);
+    
 }
 #navbar {
     display: flex;
@@ -34,21 +35,21 @@ body {
     grid-template-rows: repeat(autof-fit, minmax(300px, 1fr));
     align-items: center;
     justify-items: center;
+    
 }
 .itemPara {
     box-sizing: content-box;
     padding: 60px 10px;
     margin: 10px 10px;
-    /* width: 240px; */
-    /* height: 200px; */
-    /* display: flex;
+    /* width: 240px;
+    height: 200px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    text-align: left; */
-    /* background-color: #1bd7c1; */
+    text-align: left;
+    background-color: #1bd7c1; */
     border-radius: 10px;
-    background-image: url(card-pattern.png);
     border: 3px solid red;
 }
 img {
