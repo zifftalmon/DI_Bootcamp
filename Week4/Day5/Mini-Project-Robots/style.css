@@ -1,21 +1,59 @@
 * {
     margin: 0;
 }
-
+body {
+    background-color: #6e1087;
+    background-image: url(circuit-pattern.png);
+}
 #navbar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: #45dc43;
+    background-image: url;
     height: 50px;
 }
 #navbar h1 {
+    font-family: 'SEGA LOGO FONT', sans-serif;                                                
     margin-left: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
 }
 #navbar form {
     margin-left: 100px;
 }
 #navbar form > input {
-    width: 30vw;
+    background-color: rgb(200, 185, 185);
+    width: 50vw;
     height: 5vh;
+}
+
+#robots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(autof-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
+.itemPara {
+    padding: 60px 10px;
+    margin: 10px 10px;
+    width: 240px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    background-color: #1bd7c1;
+    border-radius: 10px;
+    background-image: url(card-pattern.png);
+}
+img {
+    margin: auto auto;
+    width: 230px;
+    height: 230px;
+    border-radius: 150px;
+    border: 3px solid red;
+    background-color: #0f354c;
 }
