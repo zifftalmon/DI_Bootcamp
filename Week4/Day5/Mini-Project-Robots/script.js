@@ -1,7 +1,8 @@
+//VARIABLE FOR ROBOTS DIV
 let robots = document.getElementById("robots");
-
+//VARIABLE FOR DIVS INSIDE ROBOTS DIV
 let robotBox;
-
+//FUNCTION FOR CREATING THE ROBOTBOX DIVS
 let robotDiv = () => {
     for(let i=0; i < 10; i++) {
         robotBox = document.createElement("div");
@@ -11,7 +12,7 @@ let robotDiv = () => {
 }
 robotDiv();
 
-
+//CLASS FOR CREATING THE INSTANCES OF THE ROBOT
 class Robot {
     constructor (id,name,username,email,image) {
         this.id = id;
@@ -21,7 +22,7 @@ class Robot {
         this.image = image;
     }
 }
-
+//ARRAY OF ROBOT DETAILS
 const robotsArray = [
     {
       id: 1,
@@ -94,9 +95,9 @@ const robotsArray = [
       image:'https://robohash.org/10?200x200'
     }
     ];
-
+//VARIABLE FOR STORING THE NEWLY CREATED ROBOT INSTANCES
 const result = [];
-
+//LOOP FOR CREATING ROBOT INSTANCES
 for (const robot of robotsArray) {
     const id = robot.id;
     const name = robot.name;
@@ -106,9 +107,9 @@ for (const robot of robotsArray) {
     const newRobot = new Robot (id,name,username,email,image);
     result.push(newRobot);
 }
-
+//VARIABLE FOR SELECTING THE ROBOTBOX DIVS
 let allRobots = document.querySelectorAll(".robotItem")
-
+//FUNCTION FOR ASSIGNING A NAME, AN EMAIL ADDRESS AND AN IMAGE FOR EACH ROBOTBOX DIV
 function addRobots () {
     allRobots.forEach((element, i)  => {
         let header = document.createElement("h2");
@@ -126,26 +127,48 @@ function addRobots () {
     })
 }
 addRobots();
-
+//VARIABLE ASSIGNED WITH THE ARRAY OF THE ROBOXBOX DIVS DETAILS
 let robotResult = Object.entries(allRobots);
-
+//VARIABLE FOR RETRIEVING THE SEARCH INPUT
 let input = document.getElementById("myInput");
-
+//FUNCTION FOR FILTERING THE RESULT CORRESPONDING TO THE ENTERED INPUT FROM THE SEARCH
 let filter = (e) => {
-    allRobots.forEach((element,index) => {
+    allRobots.forEach((element) => {
         if(e.target.value.toLowerCase() == element.textContent[0].toLowerCase()) {
         element.style.visibility = "visible";
         } else {
           element.style.visibility = "hidden";
         }
-        
+
         if (e.target.value == "") {
           element.style.visibility = "visible";
         }
     })
     console.log(e.target.value);
     }
-
+//EVENT LISTENER FOR INPUT ADDED TO THE SEARCH INPUT
 input.addEventListener("input", filter);
 
 
+/*
+THERE WERE TWO PARTS I STRUGGLED WITH IN THIS EXERCISE, 
+
+THE FIRST
+ONE WAS RETRIEVING EACH ROBOTITEM DIV AND ASSIGNING IT AN INDIVIDUAL
+IMAGE, TITLE AND EMAIL, AT FIRST I TRIED DOING THIS WITH JUST ONE DIV HARD CODED TO THE HTML FILE, ONCE I SAW HOW
+IT LOOKS AND IT SATISFIED ME I TRIED COMING UP WITH A FUNCTION
+TO DO THIS, I USED THE SAME CODE I WROTE FOR INSERTING DETAILS TO THE SINGULAR
+DIV, AT FIRST THIS DIDN'T WORK, ALL THE DETAILS GOT INSERTED TO A SINGLE DIV, MY SOLUTION FOR THIS WAS USING
+A VARIABLE TO STORE ALL THE DIVS, AND ITERATING OVER THIS VARIABLE WITH FOREACH AND INSERTING THE DETAILS TO EACH ITEM OF THE MENTIONED VARIABLE
+
+THE SECOND
+FINDING A WAY TO FILTER OUT THE DESIRED RESULT WHEN ENTERING INPUT TO THE SEARCH INPUT,
+THIS WAS DIFFICULT I WASN;T DURE IF I SHOULD USE FILTER OR ANOTHER METHOD, MOST
+DOCUMENTATION I FOUND ON THIS MATTER ONLINE WAS RELEVANT TO LISTS AND LIST ITEMS RATHER
+THAN DIVS OR "CARDS", I TRIED USING FILTER BUT THIS PROVED UNHELPFUL, AFTER A FEW TRIES WITH DIFFERENT
+METHODS SUCH AS MAP AND FOREACH, COMPARING THE ELEMNTS I USED TO A CERTAIN TEXTCONTENT, AND THIS 
+WASN'T DYNAMIC LIKE I THE INSTRUCTIONS REQUIRED, FINALLY, I USED AN EVENT LISTENER,
+THIS EVENT LISTENER IS TRIGGERED BY INPUT, AND THE FUNCTION FOR IT TAKES THE VALUE OF THE INPUT EVENT TARGET AND 
+COMPARES THE VALUE TO THE ELEMNTS' FIRST LETTER, THUS CREATING A SIMPLE & ROUGH FILTER, BECAUSE IT ONLY ACCEPTS
+ONE CHARACTER, TWO CHARACTERS CAUSE IT TO DISPLAY NOTHING, WASN'T SURE HOW TO HANDLE THIS PROBLEM
+*/

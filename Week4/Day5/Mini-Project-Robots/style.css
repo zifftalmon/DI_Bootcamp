@@ -1,11 +1,14 @@
+/*STYLE FOR THE DOCUMENT */
 * {
     margin: 0;
 }
+/* STYLE FOR THE BODY */
 body {
     background-color: #6e1087;
     background-image: url(circuit-pattern.png);
     
 }
+/* STYLE FOR THE NAVBAR */
 #navbar {
     display: flex;
     align-items: center;
@@ -14,21 +17,24 @@ body {
     background-image: url;
     height: 50px;
 }
+/* STYLE FOR THE ROBOFRIENDS TITLE */
 #navbar h1 {
     font-family: 'SEGA LOGO FONT', sans-serif;                                                
     margin-left: 20px;
     font-weight: 100;
     letter-spacing: 2px;
 }
+/* STYLE FOR THE POSITION OF THE SEARCH INPUT */
 #navbar form {
     margin-left: 100px;
 }
+/* STYLE FOR THE SEARCH INPUT */
 #navbar form > input {
     background-color: rgb(200, 185, 185);
     width: 50vw;
     height: 5vh;
 }
-
+/* STYLE FOR THE ROBOTS DIV */
 #robots {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -37,6 +43,7 @@ body {
     justify-items: center;
     
 }
+/* STYLE FOR THE DIVS INSIDE THE ROBOT DIV */
 .robotItem {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: content-box;
@@ -53,6 +60,7 @@ body {
     background-image: url(card-pattern.png);
     border-radius: 10px;
 }
+/* STYLE FOR THE IMAGES INSIDE EACH DIV OF THE ROBOTS DIV*/
 img {
     margin: auto auto;
     width: 230px;
