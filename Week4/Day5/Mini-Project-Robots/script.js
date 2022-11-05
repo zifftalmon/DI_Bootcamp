@@ -5,10 +5,8 @@ let robotBox;
 let robotDiv = () => {
     for(let i=0; i < 10; i++) {
         robotBox = document.createElement("div");
+        robotBox.setAttribute("class" ,"itemPara")
         robots.appendChild(robotBox);
-        robotBox.style.background = "#1bd7c1";
-        robotBox.setAttribute("id","robotBoxDiv")
-        robotBox.setAttribute("class", "itemPara");
     }
 }
 robotDiv();
@@ -23,12 +21,6 @@ class Robot {
         this.image = image;
     }
 }
-
-// const robot1 = new Robot ("1", "Leanne Graham","Bret","Sincere@april.biz","https://robohash.org/1?200x200");
-
-// console.log(robot1);
-
-
 
 const robotsArray = [
     {
@@ -114,20 +106,43 @@ for (const robot of robotsArray) {
     const newRobot = new Robot (id,name,username,email,image);
     result.push(newRobot);
 }
-    console.log(result);
-    function addRobots() {
-        robotsArray.forEach((result) => {
-            let header1 = document.createElement("h2");
-            let headerText = document.createTextNode(`${result.name}`);
-            let email1 = document.createElement("p");
-            let emailText = document.createTextNode(`${result.email}`);
-            let image1 = document.createElement("img");
-            image1.setAttribute("src",`${result.image}`);
-            header1.append(headerText);
-            email1.append(emailText);
-            robotBox.appendChild(image1);
-            robotBox.append(header1);
-            robotBox.append(email1);
-        })  
-    }
+    // console.log(result);
+    
+//     function addRobots() {
+//         robotBox.forEach((result) => {
+            // let header1 = document.createElement("h2");
+            // let headerText = document.createTextNode(`${result.name}`);
+            // let email1 = document.createElement("p");
+            // let emailText = document.createTextNode(`${result.email}`);
+            // let image1 = document.createElement("img");
+            // image1.setAttribute("src",`${result.image}`);
+            // header1.append(headerText);
+            // email1.append(emailText);
+//             robotBox.setAttribute("class", "itemPara");
+//             robotBox.appendChild(image1);
+//             robotBox.append(header1);
+//             robotBox.append(email1);
+//         })  
+//     }
+// addRobots();
+
+let allRobots = document.querySelectorAll(".itemPara")
+
+function addRobots () {
+    allRobots.forEach(element  => {
+        let header = document.createElement("h2");
+        let headerText = document.createTextNode(`${result[0].name}`);
+        let email = document.createElement("p");
+        let emailText = document.createTextNode(`${result[0].email}`);
+        let image = document.createElement("img");
+        header.appendChild(headerText);
+        email.appendChild(emailText);
+        image.setAttribute("src",`${result[0].image}`);
+        // element.appendChild(image)
+        element.appendChild(headerText);
+        // element.appendChild(emailText);
+        console.log(element.contains(headerText));
+    })
+}
+
 addRobots();
