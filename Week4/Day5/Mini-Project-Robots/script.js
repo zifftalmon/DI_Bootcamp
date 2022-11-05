@@ -131,8 +131,21 @@ let robotResult = Object.entries(allRobots);
 
 let input = document.getElementById("myInput");
 
-// input.addEventListener("input", filter);
-
-robotResult.filter(element => {
-        console.log(element); 
+let filter = (e) => {
+    allRobots.forEach((element,index) => {
+        if(e.target.value.toLowerCase() == element.textContent[0].toLowerCase()) {
+        element.style.visibility = "visible";
+        } else {
+          element.style.visibility = "hidden";
+        }
+        
+        if (e.target.value == "") {
+          element.style.visibility = "visible";
+        }
     })
+    console.log(e.target.value);
+    }
+
+input.addEventListener("input", filter);
+
+
