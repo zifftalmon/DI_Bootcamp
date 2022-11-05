@@ -41,14 +41,14 @@ body {
     box-sizing: content-box;
     padding: 60px 10px;
     margin: 10px 10px;
-    /* width: 240px;
+    width: 240px;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
     text-align: left;
-    background-color: #1bd7c1; */
+    background-color: #1bd7c1;
     border-radius: 10px;
     border: 3px solid red;
 }
@@ -57,6 +57,9 @@ img {
     width: 230px;
     height: 230px;
     border-radius: 150px;
-    /* border: 3px solid red; */
+    border: 3px solid red;
     background-color: #0f354c;
+}
+h2 {
+    font-size: 20px;
 }
