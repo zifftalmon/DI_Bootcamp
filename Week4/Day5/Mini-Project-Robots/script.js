@@ -5,7 +5,7 @@ let robotBox;
 let robotDiv = () => {
     for(let i=0; i < 10; i++) {
         robotBox = document.createElement("div");
-        robotBox.setAttribute("class" ,"itemPara")
+        robotBox.setAttribute("class" ,"robotItem")
         robots.appendChild(robotBox);
     }
 }
@@ -106,42 +106,23 @@ for (const robot of robotsArray) {
     const newRobot = new Robot (id,name,username,email,image);
     result.push(newRobot);
 }
-    // console.log(result);
-    
-//     function addRobots() {
-//         robotBox.forEach((result) => {
-            // let header1 = document.createElement("h2");
-            // let headerText = document.createTextNode(`${result.name}`);
-            // let email1 = document.createElement("p");
-            // let emailText = document.createTextNode(`${result.email}`);
-            // let image1 = document.createElement("img");
-            // image1.setAttribute("src",`${result.image}`);
-            // header1.append(headerText);
-            // email1.append(emailText);
-//             robotBox.setAttribute("class", "itemPara");
-//             robotBox.appendChild(image1);
-//             robotBox.append(header1);
-//             robotBox.append(email1);
-//         })  
-//     }
-// addRobots();
 
-let allRobots = document.querySelectorAll(".itemPara")
+let allRobots = document.querySelectorAll(".robotItem")
 
 function addRobots () {
-    allRobots.forEach(element  => {
+    allRobots.forEach((element, i)  => {
         let header = document.createElement("h2");
-        let headerText = document.createTextNode(`${result[0].name}`);
+        let headerText = document.createTextNode(`${result[i].name}`);
+        header.append(headerText);
         let email = document.createElement("p");
-        let emailText = document.createTextNode(`${result[0].email}`);
-        let image = document.createElement("img");
-        header.appendChild(headerText);
+        let emailText = document.createTextNode(`${result[i].email}`);
         email.appendChild(emailText);
-        image.setAttribute("src",`${result[0].image}`);
-        // element.appendChild(image)
-        element.appendChild(headerText);
-        // element.appendChild(emailText);
-        console.log(element.contains(headerText));
+        let image = document.createElement("img");
+        image.setAttribute("src",`${result[i].image}`);
+        element.appendChild(image)
+        element.append(header)
+        element.append(email)
+        
     })
 }
 
