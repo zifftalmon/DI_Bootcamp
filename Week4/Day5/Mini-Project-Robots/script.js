@@ -119,11 +119,20 @@ function addRobots () {
         email.appendChild(emailText);
         let image = document.createElement("img");
         image.setAttribute("src",`${result[i].image}`);
+        element.setAttribute("id", i);
         element.appendChild(image)
         element.append(header)
         element.append(email)
-        
     })
 }
-
 addRobots();
+
+let robotResult = Object.entries(allRobots);
+
+let input = document.getElementById("myInput");
+
+// input.addEventListener("input", filter);
+
+robotResult.filter(element => {
+        console.log(element); 
+    })
