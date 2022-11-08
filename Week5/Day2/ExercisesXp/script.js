@@ -1,20 +1,21 @@
-const xhr1 = new XMLHttpRequest();
+// const xhr1 = new XMLHttpRequest();
 
-function getGiphy () {
+// function getGiphy () {
         
-    xhr1.open("GET", "https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My");
+//     xhr1.open("GET", "https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My");
 
-    xhr1.responseType = "json";
+//     xhr1.responseType = "json";
 
-    xhr1.send();
+//     xhr1.send();
 
-    console.log(xhr1);
+//     xhr1.onload = function () {
+//         console.log(xhr1.response.data)
+//     }
+// }
 
-}
+// getGiphy();
 
-getGiphy();
-
-const xhr2 = new XMLHttpRequest();
+// const xhr2 = new XMLHttpRequest();
 
 // function getSun () {
         
@@ -24,8 +25,9 @@ const xhr2 = new XMLHttpRequest();
 
 //     xhr2.send();
 
-//     console.log(xhr2);
-
+//     xhr2.onload = function () {
+//         console.log(xhr2.response.data);
+//     }
 // }
 
 // getSun();
