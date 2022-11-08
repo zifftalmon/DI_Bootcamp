@@ -3,6 +3,8 @@ function makeAllCaps (wordArr) {
         wordArr.forEach(element => {
             if (typeof element === "string") {
              resolve (wordArr);    
+            } else {
+             reject ("Not a String in the Array")
             }
         });
     })
@@ -10,6 +12,20 @@ function makeAllCaps (wordArr) {
     .then(res => res.map((element => {
         return element.toUpperCase();
     })))
-    .then(capRes => console.log(capRes))
+    .then(sortRes => sortWords(sortRes))
+    .catch((error) => console.log(error));
 }
-makeAllCaps(["sir", "man", "guy"])
+makeAllCaps(["fish", "man", "guy","sun","gun"])
+
+function sortWords (arr) {
+    const checkNumber = new Promise ((resolve, reject) => {
+        if (arr.length >= 4) {
+            resolve (arr);
+        } else {
+            reject ("Array Too Short");
+        }
+    })
+    return checkNumber
+    .then(sortedRes => console.log(sortedRes.sort()))
+    .catch((error) => console.log(error));
+}
