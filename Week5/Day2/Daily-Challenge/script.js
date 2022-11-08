@@ -1,62 +1,59 @@
-let input = document.querySelector("#gif")
-const xhr = new XMLHttpRequest();
-
 const form = document.querySelector("#frm");
-const button = document.querySelector("#search");
+form.addEventListener("submit", addGif);
+const section  = document.getElementById("gifSec");
 
-let delAllButton = document.createElement("button");    
-let delAllText = document.createTextNode("delete all")
-delAllButton.append(delAllText);
-form.appendChild(delAllButton);
-
-button.addEventListener("click", addGif);
 function addGif (e) {
     e.preventDefault();
+    const userInput = e.target.gif.value;
+    gifRequest(userInput);
+}
 
-    const url = `https://api.giphy.com/v1/gifs/search?q=${input.value}&rating=g&limit=1&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`
-    
-    xhr.open("GET", url);
+function gifRequest(input) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", `https://api.giphy.com/v1/gifs/random?tag=${input}&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`)    
     
     xhr.responseType = "json";
-
+    
     xhr.send();
-
-
-
-xhr.onload = function () {
-    let section  = document.getElementById("gifSec");
-
-    let image = document.createElement("img");
     
-    let delButton = document.createElement("button");
-
-    let delText = document.createTextNode("delete");
-
-    delButton.append(delText);
+    xhr.onload = function () {
+        
+        if (xhr.status != 200) {
+            console.log("error");
+        }else {
+            appendGifToPage(xhr.response.data.images.original.url)
+        }
+        
+        function appendGifToPage(url) {
+            const image = document.createElement("img");
+            image.src=url;
+            section.append(image);
+            let delAllButton = document.createElement("button");
+            let delAllText = document.createTextNode("delete all");
+            delAllButton.append(delAllText);
+            form.appendChild(delAllButton);
+            
+            let delButton = document.createElement("button");
+            let delText = document.createTextNode("delete");
+            delButton.append(delText);
+            section.append(delButton);
+            delButton.addEventListener("click", delGif)
+            function delGif (e) {
+                e.preventDefault();
+                section.removeChild(image);
+                section.removeChild(e.target);   
+            }
+            delAllButton.addEventListener("click", delAllGifs);
+            function delAllGifs (e) {
+                e.preventDefault();
+                console.log(e.target);
+                form.removeChild(e.target);
+                section.remove(image);
+                section.remove(delButton)
+            }   
+        
+    }
     
-    image.src=xhr.response.data[0].images.downsized.url;
-
-    section.appendChild(image);
-
-    section.appendChild(delButton);
-
-    delButton.addEventListener("click", delGif)
-    function delGif (e) {
-        e.preventDefault();
-
-        section.remove(image.src = "");
-    }
-
-
-
-
-    delAllButton.addEventListener("click", delAllGifs);
-    function delAllGifs (e) {
-        let section  = document.getElementById("gifSec");
-
-        section.remove(image);
-        section.ramove(delButton);
-    }
-
 }
+
 }
