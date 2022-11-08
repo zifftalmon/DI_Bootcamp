@@ -46,10 +46,8 @@ function gifRequest(input) {
             delAllButton.addEventListener("click", delAllGifs);
             function delAllGifs (e) {
                 e.preventDefault();
-                console.log(e.target);
                 form.removeChild(e.target);
-                section.remove(image);
-                section.remove(delButton)
+                section.innerHTML = "";
             }   
         
     }
