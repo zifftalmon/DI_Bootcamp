@@ -51,10 +51,10 @@ const morse = `{
   const morseObj = JSON.parse(morse);
 
     const toObject = new Promise ((resolve, reject) => {
-        if (morseObj === "") {
-            reject ("string is empty")
-        } else {
+        if (Object.keys(morseObj).length != 0) {
             resolve(morseObj)
+        } else {
+            reject ("string is empty")
         }
     })
     toObject
@@ -66,8 +66,8 @@ const morse = `{
         let input = prompt("Enter a Word").split("");
         console.log(input);
         const inputToMorse = new Promise ((resolve, reject) => {
-            if (input.every(prop => prop in obj)) {
-                resolve(obj[`${input}`]);
+            if (input.every(prop => obj[prop])) {
+                resolve(input.map(e => obj[e]));
             } else {
                 reject("no")
             }
@@ -78,11 +78,13 @@ const morse = `{
     }
 
 
-    function appendToPage(arr) {
-        let container = document.getElementById("container")
+    function appendToPage(str) {
 
-        let text = document.createTextNode(`${arr}`)
+        let container = document.getElementById("container")
+        
+        let text = document.createTextNode(str)
 
         container.append(text);
+
     }
     toJs();
