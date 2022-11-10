@@ -1,0 +1,34 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    background-image: url(giphy.gif);
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6em;
+}
+
+#information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid yellow;
+    border-radius: 20px;
+    width: 50vw;
+    height: 50vh;
+    color: white;
+}
+button {
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
