@@ -51,41 +51,34 @@ async function findPerson (e)  {
     return data();
 
     function appendToPage (arr) {
-        const header = document.createElement("h1");
-        const headerText = document.createTextNode(arr[0])
-        header.append(headerText);
-
-        const height = document.createElement("h2");        
-        const heightText = document.createTextNode(`Height: ${arr[1]}`)
-        height.appendChild(heightText);
-
-        const gender = document.createElement("h2");
-        const genderText = document.createTextNode(`Gender: ${arr[2]}`)
-        gender.append(genderText);
-
-        const age = document.createElement("h2");
-        const ageText = document.createTextNode(`Birth Year: ${arr[3]}`)
-        age.append(ageText);
-
-        const planet = document.createElement("h2");
-        const planetText = document.createTextNode(`Home Planet: ${arr[4]}`)
-        planet.append(planetText);
-
-
-        info.append(header);
-        info.append(height);
-        info.append(gender);
-        info.append(age);
-        info.append(planet);
+            const header = document.getElementById("header");
+            const headerText = document.createTextNode(arr[0])
+            header.appendChild(headerText);
+    
+            const height = document.getElementById("height");        
+            const heightText = document.createTextNode(`Height: ${arr[1]}`)
+            height.appendChild(heightText);
+    
+            const gender = document.getElementById("gender");
+            const genderText = document.createTextNode(`Gender: ${arr[2]}`)
+            gender.appendChild(genderText);
+    
+            const age = document.getElementById("age");
+            const ageText = document.createTextNode(`Birth Year: ${arr[3]}`)
+            age.appendChild(ageText);
+    
+            const planet = document.getElementById("planet");
+            const planetText = document.createTextNode(`Home Planet: ${arr[4]}`)
+            planet.appendChild(planetText);
         
         button.addEventListener("click", clearPage);
         
         function clearPage () {
-            info.removeChild(header);
-            info.removeChild(height);
-            info.removeChild(gender);
-            info.removeChild(age);
-            info.removeChild(planet);
+            header.removeChild(headerText);
+            height.removeChild(heightText);
+            gender.removeChild(genderText);
+            age.removeChild(ageText);
+            planet.removeChild(planetText);
         }
     }  
 }
