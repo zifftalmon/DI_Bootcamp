@@ -6,6 +6,7 @@ body {
     background-image: url(thumb2-money-background-finance-money-texture-american-dollars-euro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
 }
 #container {
     display: flex;
@@ -16,12 +17,11 @@ body {
 #converter {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin-top: 20px;
     width: 40%;
     height: 90vh;
-    background-color: rgba(78, 61, 162, 0.503);
+    background-color: rgba(78, 61, 162, 0.453);
     border-radius: 20px;
 }
 #converter h1, h2 {
@@ -29,27 +29,55 @@ body {
     color: #d3cccc;
 }
 #converter select {
+    color: #d3cccc;
     width: 70%;
-    background-color: rgba(78, 61, 162, 0.503);
+    background-color: rgba(78, 61, 162, 0.803);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+#converter option {
+    font-family: 'Poppins', sans-serif;
+
 }
 #converter form  {
     display: flex;
 }
 
-
 #converter form > input {
-    background-color: rgba(78, 61, 162, 0.503);
+    text-align: center;
+    color: #d3cccc;
+    background-color: rgba(78, 61, 162, 0.803);
     width: 20vw;
     margin: 20px;
+    border-radius: 5px;
+    border: none;
 
 }
 #converter form > button {
     width : 10vw;
     height: 30px;
     font-size: 1em;
-    background-color: rgba(78, 61, 162, 0.503);
+    background-color: rgba(78, 61, 162, 0.803);
     margin: 20px;
+    color: #d3cccc;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
 
-    
+}
+#converter form > button:hover {
+    color: rgb(78, 61, 162);
+    background-color:  #d3cccc;
+    transition: 0.5s;
+} 
+#result {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #d3cccc;
+    width: 10vw;
+    height: 30px;
+    background-color: rgba(78, 61, 162, 0.803);
 
 }
