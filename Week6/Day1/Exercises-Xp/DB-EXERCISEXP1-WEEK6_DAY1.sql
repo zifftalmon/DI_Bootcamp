@@ -55,3 +55,19 @@
 -- SELECT * FROM customers WHERE last_name = 'Jones'
 --fetch all customers whose last name is NOT scott
 -- SELECT * FROM customers WHERE first_name != 'Scott'
+
+--EXERCISE XP1 W6D2
+
+--fetch all items by price descending
+-- SELECT * FROM items ORDER BY item_price DESC
+
+--all items with prive above 80 inclusive ordered by price descending
+-- SELECT * FROM items WHERE item_price >= 80 ORDER BY item_price DESC
+
+--first 3 customers in alphabetical order (A-Z)-primary key excluded
+-- SELECT first_name, last_name FROM customers ORDER BY first_name ASC LIMIT 3
+
+--all last names in reverse alphabetical order (Z-A)
+-- SELECT last_name FROM customers ORDER BY last_name DESC 
+
+
