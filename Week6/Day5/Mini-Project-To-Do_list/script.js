@@ -9,14 +9,13 @@ async function addTask (e) {
     
     let name = document.forms[0].elements.taskName.value
     
-
     let desc = document.forms[0].elements.taskDesc.value
-
+ 
     let start = document.forms[0].elements.startDate.value
 
     let end = document.forms[0].elements.endDate.value
 
-    let taskInfo = [name,desc,start, end]
+    let taskInfo = [`Name : ${name}`, `Description : ${desc}`, `Start date and time : ${start}`, `End date and time : ${end}` ]
 
     taskInfo.forEach((element => {
         let infoDiv = document.createElement("div")
