@@ -248,9 +248,22 @@
 
 
 // 21
-// you could declarea another variable inside the function and assign it a value of "red"
-//then, assign this variable as the value of myshirt.color, because the variable would be function-scoped it would not
-// affect the global code
+
+// function changeTshirt ({...myshirt}){
+//     console.log("myshirt", myshirt);
+//     myshirt.color = "red"
+//     console.log("myshirt", myshirt); //this is the parameter
+//     console.log("tshirt", tshirt);   //this is the global variable
+// }
+
+
+// const tshirt = {
+//     color : "blue",
+//     price : 10
+// }
+
+// changeTshirt(tshirt)
+
 
 
 //22
@@ -270,8 +283,8 @@
 
 //23
 
-// function retrieveSports () {
-//     const sentence = `My favorite football teams are ${franceTeam} and ${spainTeam}`;
+// function retrieveSports ({clubs: {france, spain}} = football) {
+//     const sentence = `My favorite football teams are ${franceTeam=france} and ${spainTeam=spain}`;
 //     console.log(sentence);
 //  }
 
@@ -282,12 +295,6 @@
 //        spain : "Atlético Madrid",
 //      }
 //    }  
-//    const {clubs: {france, spain}} = football
-  
-//    const franceTeam = france
-  
-//    const spainTeam = spain
-
 //  retrieveSports(football)
 
 
@@ -355,23 +362,22 @@
 
 //28
 
-// const catButton = document.getElementById("catBtn")
+const catButton = document.getElementById("catBtn")
 
-// const body = document.body
+const body = document.body
 
-// async function fetchCat () {
-//     try {
-//         const request = await fetch("https://catfact.ninja/fact")
-//         const resp = await request.json()
-//         catButton.addEventListener("click",addFact)
-//         function addFact(e) {
-//             const para = document.createElement("p");
-//             para.innerText = resp.fact
-//             body.append(para)
-//         }
-//     }catch(Error){
-//         console.log('No fact Found, Try again later', Error);
-//     }
-
-// }
-// fetchCat();
+async function fetchCat () {
+    try {
+        const request = await fetch("https://catfact.ninja/fact")
+        const resp = await request.json()
+        return resp.fact   
+    }catch(Error){
+        console.log('No fact Found, Try again later', Error);
+    }
+}
+catButton.addEventListener("click",addFact)
+async function addFact() {
+    const para = document.createElement("p");
+    para.innerText = await fetchCat();
+    body.append(para)
+}
