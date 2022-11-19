@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FFC6A4;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+#taskContainer {
+    padding: 0.5em;
+    height: 80%;
+    width: 80%; 
+    margin: auto auto;
+    border-radius: 3px;
+    background-color: rgba(248, 143, 112, 0.6);   
+    text-decoration: none;
+}
+/* .task {
+    border-bottom: 1px solid #BC5B40;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif; 
+} */
