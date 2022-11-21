@@ -1,0 +1,15 @@
+{
+  "name": "exercisexp3-w7d2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serverExpress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serverExpress.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
