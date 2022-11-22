@@ -2,9 +2,9 @@ const http = require('http');
 
 const server = http.createServer((req,res) => {
     if(req.url == '/') {
+        const user = {firstname: 'John',lastname: 'Doe'}
         res.setHeader('Content-Type', 'appliaction/json');
-        res.write(JSON.stringify({firstname: 'John',lastname: 'Doe'}));
-        res.end();
+        res.end(JSON.stringify(user));
     } else {
         res.end("another page")
     }
