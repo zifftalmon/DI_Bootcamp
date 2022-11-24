@@ -12,7 +12,8 @@ const db = knex({
 });
 
 db('products')
-.select('product_name')
+// .delete
+.select('*')
 .from('products')
 .then(res => {
     console.log(res);
