@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
     
-    <h1>My Shopping List ejs</h1>
-    <form id="shoppingList">
+    <h1>My Shopping List </h1>
+    <form id="shoppingList" action="http://localhost:3001/form/cart" method="post">
         <label for="product">Product</label>
         <input type="text" id="product" name="myProduct">
         <label for="amount">Amount</label>
@@ -19,7 +18,11 @@
     </form>
 
     <div>
-        
-    </div>
-</body>
+        <% data.forEach(item => { %>
+            <p>
+                <h2><%= item.product_name %>: <%=item.product_amount %></h2>
+            </p>
+            <% }) %>
+        </div>
+    </body>
 </html>
