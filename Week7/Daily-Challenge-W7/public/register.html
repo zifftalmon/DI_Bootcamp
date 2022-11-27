@@ -9,22 +9,28 @@
 <body>
     <h1>Register:</h1>
 
-    <form id="register" action="./register.html">
+    <form  onsubmit="register(event)">
         <label for="fName">first name</label>
         <input type="text" id="fName" name="fName">
-
+<br><br>
         <label for="lName">last name</label>
         <input type="text" id="lName" name="lName">
-
+<br><br>
         <label for="email">email</label>
         <input type="text" id="email" name="email">
-        
+<br><br>        
         <label for="userName">user name</label>
         <input type="text" id="userName" name="userName">
-
-        <label for="password">first name</label>
+<br><br>
+        <label for="password">password</label>
         <input type="password" id="password" name="pass">
+<br><br>
+        <input type="submit" name="" value="register">
     </form>
+    <script src="register.js"></script>
+    <div id="root">
+
+    </div>
 </body>
 </html>
 
