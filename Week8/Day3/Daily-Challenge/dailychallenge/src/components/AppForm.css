@@ -1,0 +1,22 @@
+h1 {
+    background-color: darkslategrey;
+    text-align: left;
+    color: white;
+}
+.formDiv {
+    background-color: antiquewhite;
+    text-align: left;
+}
+.formDiv input[type="text"] {
+    width: 50%;
+    margin: 5px;
+}
+.formDiv input[type="submit"] {
+    padding: 10px;
+    margin: 20px;
+}
+.infoDiv {
+    text-align: left;
+    color: white;
+    background-color: green;
+}
