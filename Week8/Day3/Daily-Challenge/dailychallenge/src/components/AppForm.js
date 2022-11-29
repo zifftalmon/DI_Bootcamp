@@ -28,11 +28,6 @@ class AppFrom extends React.Component {
 
     }
 
-    handleSubmit = (e) => {
-        e.preventDefault();
-    }
-
-
     render() {
         return(
             <>
