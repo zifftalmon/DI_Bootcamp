@@ -1,13 +1,11 @@
-import React from "react";
+// import React from "react";
 
-const Block = (props) => {
-    return (
-        <div>
-            <p>{props.votes}</p>
-            <h1>{props.name}</h1>
-            <button>vote here</button>
-        </div>
-    )
-}
+// const Block = (props) => {
+//     return (
+//         <div>
 
-export default Block
+//         </div>
+//     )
+// }
+
+// export default Block
