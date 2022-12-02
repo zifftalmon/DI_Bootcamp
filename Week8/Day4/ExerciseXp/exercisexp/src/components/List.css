@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    padding: 40px;
+    color: black;
+}
+.shopList {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    background-color: rebeccapurple;
+    text-decoration: none;
+}
+.shopList li {
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    
+}
