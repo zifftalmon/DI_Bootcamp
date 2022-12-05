@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.scoreDiv {
+  color: white;
+  background-color: rgb(208, 47, 3);
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: -1px 2px 28px 3px rgba(0,0,0,0.48);
+}
+.scoreDiv h1{
+  padding: 5px;
+}
+.scoreDiv h4 {
+  padding-right: 20px;
+  align-self: flex-end;
+  letter-spacing: 10px;
+}
+h2 {
+  margin-top: 5px;
+  background-image: linear-gradient(to right, #de8614, #f84c32, #fe0064, #df00a6, #7312eb);
+  color: white;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax (300px, 1fr));
+  gap: 3em;
+  margin: 4em 1em;
+}
+
+.heroDiv {
+  width: 280px;
+  height: 300px;
+  box-shadow: -1px 2px 28px 3px rgba(0,0,0,0.48);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroDiv:hover {
+  box-shadow: -1px 2px 28px 3px #000000;
+  cursor: pointer;
+
+}
+
+.heroDiv img {
+  width: 200px;
+  height: 220px;
+}
