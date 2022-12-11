@@ -2,12 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+
+import { createStore, applyMiddleware } from 'redux'
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk'
+// import logger from 'redux-logger'
+
 import reportWebVitals from './reportWebVitals';
 
+import { rootReducer } from './redux/reducers.js'
+
+const myLogger = (store) => (next) => (action) => {
+  console.log('prev state', store.getState());
+  next(action)
+  console.log('next state', store.getState());
+}
+
+const store = createStore(rootReducer, applyMiddleware(thunk,myLogger))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
