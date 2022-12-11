@@ -24,11 +24,6 @@ class Quote extends Component {
         
     }
     
-    
-    
-    
-    
-    
     render() {
         document.body.style.backgroundColor = `#${this.state.color}`
         return (
