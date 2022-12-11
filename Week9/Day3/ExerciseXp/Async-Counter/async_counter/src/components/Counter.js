@@ -6,19 +6,21 @@ const Counter = (props) => {
 
     const incrementIfOdd = () => {
         if(props.count % 2 === 1) {
-            return props.increment
+            props.increment()
         }
     }
 
-    // const asyncAdd = setTimeout(props.increment,1000)
+    const addAsync = () => setTimeout(props.increment, 1000)
+
+    
 
         return(
             <>
             <p>clicked: {props.count} times</p>
             <button onClick={props.increment}>+</button>
             <button onClick={props.decrement}>-</button>
-            <button onClick={() => incrementIfOdd}>increment if odd</button>
-            <button>increment async</button>
+            <button onClick={incrementIfOdd}>increment if odd</button>
+            <button onClick={addAsync}>increment async</button>
             </>
         )
     }
