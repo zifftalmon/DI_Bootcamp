@@ -13,9 +13,9 @@ import reportWebVitals from './reportWebVitals';
 import { rootReducer } from './redux/reducers.js'
 
 const myLogger = (store) => (next) => (action) => {
-  console.log('prev state', store.getState());
   next(action)
   console.log('next state', store.getState());
+  // console.log('prev state', store.getState());
 }
 
 const store = createStore(rootReducer, applyMiddleware(thunk,myLogger))
