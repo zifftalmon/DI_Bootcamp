@@ -1,0 +1,159 @@
+[
+    {
+      "Date": "2022-12-13T07:00:00+01:00",
+      "EpochDate": 1670911200,
+      "Temperature": {
+        "Minimum": {
+          "Value": 57,
+          "Unit": "F",
+          "UnitType": 18
+        },
+        "Maximum": {
+          "Value": 60,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "Day": {
+        "Icon": 12,
+        "IconPhrase": "Showers",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light"
+      },
+      "Night": {
+        "Icon": 38,
+        "IconPhrase": "Mostly cloudy",
+        "HasPrecipitation": false
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=1&lang=en-us",
+      "Link": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=1&lang=en-us"
+    },
+    {
+      "Date": "2022-12-14T07:00:00+01:00",
+      "EpochDate": 1670997600,
+      "Temperature": {
+        "Minimum": {
+          "Value": 54,
+          "Unit": "F",
+          "UnitType": 18
+        },
+        "Maximum": {
+          "Value": 64,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "Day": {
+        "Icon": 4,
+        "IconPhrase": "Intermittent clouds",
+        "HasPrecipitation": false
+      },
+      "Night": {
+        "Icon": 36,
+        "IconPhrase": "Intermittent clouds",
+        "HasPrecipitation": false
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=2&lang=en-us",
+      "Link": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=2&lang=en-us"
+    },
+    {
+      "Date": "2022-12-15T07:00:00+01:00",
+      "EpochDate": 1671084000,
+      "Temperature": {
+        "Minimum": {
+          "Value": 57,
+          "Unit": "F",
+          "UnitType": 18
+        },
+        "Maximum": {
+          "Value": 67,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "Day": {
+        "Icon": 4,
+        "IconPhrase": "Intermittent clouds",
+        "HasPrecipitation": false
+      },
+      "Night": {
+        "Icon": 35,
+        "IconPhrase": "Partly cloudy",
+        "HasPrecipitation": false
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=3&lang=en-us",
+      "Link": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=3&lang=en-us"
+    },
+    {
+      "Date": "2022-12-16T07:00:00+01:00",
+      "EpochDate": 1671170400,
+      "Temperature": {
+        "Minimum": {
+          "Value": 52,
+          "Unit": "F",
+          "UnitType": 18
+        },
+        "Maximum": {
+          "Value": 68,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "Day": {
+        "Icon": 1,
+        "IconPhrase": "Sunny",
+        "HasPrecipitation": false
+      },
+      "Night": {
+        "Icon": 33,
+        "IconPhrase": "Clear",
+        "HasPrecipitation": false
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=4&lang=en-us",
+      "Link": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=4&lang=en-us"
+    },
+    {
+      "Date": "2022-12-17T07:00:00+01:00",
+      "EpochDate": 1671256800,
+      "Temperature": {
+        "Minimum": {
+          "Value": 49,
+          "Unit": "F",
+          "UnitType": 18
+        },
+        "Maximum": {
+          "Value": 61,
+          "Unit": "F",
+          "UnitType": 18
+        }
+      },
+      "Day": {
+        "Icon": 2,
+        "IconPhrase": "Mostly sunny",
+        "HasPrecipitation": false
+      },
+      "Night": {
+        "Icon": 34,
+        "IconPhrase": "Mostly clear",
+        "HasPrecipitation": false
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "MobileLink": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=5&lang=en-us",
+      "Link": "http://www.accuweather.com/en/it/pagliarelli/2578379/daily-weather-forecast/2578379?day=5&lang=en-us"
+    }
+  ]

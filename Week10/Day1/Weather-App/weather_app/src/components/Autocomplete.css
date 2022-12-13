@@ -1,0 +1,55 @@
+.autocomplete {
+    border: 3px solid red;
+}
+.autocomplete input {
+    width: 20em;
+}
+.autocomplete ul {
+    display: flex;
+    text-align: left;
+}
+.autocomplete ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav h1 {
+    margin-left: 20px;
+}
+.nav div {
+    margin-right: 20px;
+}
+.nav div button {
+    margin: 10px;
+}
+.cityList {
+    padding: 20px;
+}
+.cityList li {
+    padding: 20px;
+}
+.weatherDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weatherDiv button {
+    position: relative;
+    bottom: 3.5em;
+    margin: 1em;
+}
+.cityWeather {
+    position: relative;
+    bottom: 3em;
+    display: flex;
+    align-items: center;
+}
+.cityWeather img {
+    width: 90px;
+    height: 60px;
+}
