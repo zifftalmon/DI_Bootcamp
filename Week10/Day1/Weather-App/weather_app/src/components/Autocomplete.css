@@ -1,15 +1,19 @@
-.autocomplete {
-    border: 3px solid red;
+* {
+    margin:0
+}
+body {
+    background-color: #F9EAFF;
 }
 .autocomplete input {
     width: 20em;
+    margin-top: 1em;
 }
 .autocomplete ul {
     display: flex;
     text-align: left;
+    list-style: none;
 }
 .autocomplete ul li:hover {
-    text-decoration: underline;
     cursor: pointer;
  }
 
@@ -17,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #020dd873;
 }
 .nav h1 {
     margin-left: 20px;
@@ -26,12 +31,19 @@
 }
 .nav div button {
     margin: 10px;
+    border: none;
+    background-color: #F9EAFF;
+    border-radius: 20px;
+    padding: 5px;
 }
 .cityList {
     padding: 20px;
 }
 .cityList li {
-    padding: 20px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .weatherDiv {
     display: flex;
@@ -40,16 +52,43 @@
 }
 .weatherDiv button {
     position: relative;
-    bottom: 3.5em;
+    bottom: 1.5em;
     margin: 1em;
+    padding: 0.5em;
+    border:none;
+    background-color: #020dd873;
+    border-radius: 20px;
+    cursor: pointer;
 }
 .cityWeather {
     position: relative;
-    bottom: 3em;
+    bottom: 1em;
     display: flex;
     align-items: center;
 }
 .cityWeather img {
     width: 90px;
+    height: 60px;
+}
+.forecastDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+.forecastDiv .forecast {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 40vh;
+    margin: 2em;
+    border-radius: 20px;
+    line-height: 2.5;
+    background-color: #020dd873;
+}
+.forecastDiv .forecast img {
+    width: 60px;
     height: 60px;
 }

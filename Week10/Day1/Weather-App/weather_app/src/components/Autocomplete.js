@@ -35,7 +35,7 @@ const Autocomplete = (props) => {
                     suggestions.map(item => {
                         return(
                             <div className="cityList" key={item.Key}>
-                            <li onClick={() => {
+                            <li className="grow" onClick={() => {
                                 setCityKey(item.Key);
                                 setCity(item.LocalizedName);
                                 setCountry(item.Country.LocalizedName);
@@ -49,7 +49,7 @@ const Autocomplete = (props) => {
                 }
             </ul>
                 <CurrentWeather/>
-                {<Forecast/>}
+                <Forecast/>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import {Routes, Route, Link} from 'react-router-dom'
 import Autocomplete from './Autocomplete';
-
+import 'tachyons'
 
 const Header = () => {
     const Weather = () => {
@@ -18,10 +18,10 @@ const Header = () => {
         <h1>Weather app</h1>
         <div>
         <Link to='/home'>
-        <button>Home</button>
+        <button className='grow'>Home</button>
         </Link>
         <Link to='/favorites'>
-        <button>Favorites</button>
+        <button className='grow'>Favorites</button>
         </Link>
         </div>
         </div>
