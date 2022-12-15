@@ -30,14 +30,11 @@ const getForecast = (key) => {
 }    
     if(forecast.length === 0) return null;
     
-    console.log(forecast);
-
     return (
         <>
         <div className="forecastDiv">
             {
                 forecast.map(item => {
-                    console.log(item);
                     return(
                         <div className="forecast" key={item.EpochDate}>
                             <h4>{city},<br/>{country}</h4>    

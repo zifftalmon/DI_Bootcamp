@@ -1,5 +1,6 @@
 import {Routes, Route, Link} from 'react-router-dom'
 import Autocomplete from './Autocomplete';
+import Favorites from './Favorites';
 import 'tachyons'
 
 const Header = () => {
@@ -29,7 +30,7 @@ const Header = () => {
         <Routes>
             <Route exact path='/'/>
             <Route path='/home' element={<Weather/>}/>
-            <Route path='/Favorites'/>
+            <Route path='/favorites' element={<Favorites/>}/>
         </Routes>
         </>
     )

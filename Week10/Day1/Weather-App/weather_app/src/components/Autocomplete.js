@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { AppContext } from "../App";
 import cities from './Autocomplete.json'
 import Forecast from "./Forecast";
@@ -15,7 +15,6 @@ const Autocomplete = (props) => {
     const {setCity, setCityKey, setCountry} = useContext(AppContext)
 
     const getSuggestions = (value) => {
-        // console.log(`${BASE_URL}/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${value}`);
         // fetch(`${BASE_URL}/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${value}`)
         // .then(res => res.json())
         // .then(data => {
@@ -26,7 +25,7 @@ const Autocomplete = (props) => {
         // })
         setSeuggestions(cities)
     }
-
+    
     return(
         <div className="autocomplete">
             <input type='text' onChange={(e) => getSuggestions(e.target.value)}/>

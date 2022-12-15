@@ -5,8 +5,12 @@ body {
     background-color: #F9EAFF;
 }
 .autocomplete input {
-    width: 20em;
+    width: 15em;
+    background-color: #a29b9b88;
+    height: 2em;
     margin-top: 1em;
+    border: none;
+    border-radius: 5px;
 }
 .autocomplete ul {
     display: flex;
@@ -33,17 +37,24 @@ body {
     margin: 10px;
     border: none;
     background-color: #F9EAFF;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 40px;
+    padding: 20px;
+    cursor: pointer;
 }
 .cityList {
     padding: 20px;
 }
 .cityList li {
-    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    padding: 7px;
     text-align: center;
     border: 1px solid black;
     border-radius: 10px;
+    width: 5em;
+    height: 5em;
 }
 .weatherDiv {
     display: flex;
@@ -54,10 +65,10 @@ body {
     position: relative;
     bottom: 1.5em;
     margin: 1em;
-    padding: 0.5em;
+    padding: 1em;
     border:none;
     background-color: #020dd873;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
 }
 .cityWeather {
@@ -87,6 +98,7 @@ body {
     border-radius: 20px;
     line-height: 2.5;
     background-color: #020dd873;
+    color: #F9EAFF;
 }
 .forecastDiv .forecast img {
     width: 60px;
