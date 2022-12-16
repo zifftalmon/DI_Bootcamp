@@ -1,98 +1,75 @@
 import { Route,Routes,Link } from 'react-router-dom';
+import {useState, useEffect} from 'react'
 import React from 'react'
-import { createClient } from 'pexels';
+
+const Gallery = (props) => {
 
 
-class Gallery extends React.Component {
-    constructor () {
-        super()
-        this.state = {
-            query:'Flowers',
-            photos:[]
-        }
-        // this.componentDidMount()
-    }
-    Snapshot = () => {
-        return (
-            <h2>Home</h2>
-            )
-        }
-        
-        Lizards = () => {
-        return(
-            <h2>Lizards</h2>
-        )
+    const [query, setQuery] = useState('flowers')
+    const [photos, setPhotos] = useState([])    
+    const [header, setHeader] = useState('')
+
+    const handleClick = (e) => {
+        console.log(query);
+        setQuery(e.target.text)
     }
 
-    Plants = () => {
-        return(
-            <h2>Plants</h2>
-        )
-    }
-
-    Hamburgers = () => {
-        return(
-            <h2>Hamburgers</h2>
-        )
-    }
-
-    Towers = () => {
-        return(
-            <h2>Towers</h2>
-        )
-    }
-
-    handleSubmit = (e) => {
-        this.setState({query:e.target.text})
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setQuery(e.target[0].value)
     }
     
-    componentDidMount() {
-        const client = createClient('563492ad6f91700001000001ac6332983b544e46924272837db2c879');
+    useEffect(() => {
         const getPhotos = async() => {
-            const call = await fetch(`https://api.pexels.com/v1/search?query=${this.state.query}`,{
-                mode:'no-cors',
+            const call = await fetch(`https://api.pexels.com/v1/search?query=${query}&per_page=30`,{
                 headers: {
-                    Authorization: client
+                    Authorization: '563492ad6f91700001000001ac6332983b544e46924272837db2c879'
                 }
             })
             const res = await call.json()
-            this.setState({photos:res.photos})
+            setPhotos(res.photos);
+            setHeader(query)
         }
         getPhotos()
-    }
-
-    render() {
+    },[query])
+    
         return (
         <>
             <div>
                 <h1>snapshot</h1>
-                <input type='text'/>
-                <button type='submit'>search</button>
-                <div><Link onClick={this.handleSubmit} to='/lizards'>Lizards</Link></div>
-                <div><Link onClick={this.handleSubmit} to='/plants'>Plants</Link></div>
-                <div><Link onClick={this.handleSubmit} to='/hamburgers'>Hamburgers</Link></div>
-                <div><Link onClick={this.handleSubmit} to='/towers'>Towers</Link></div>
+                <form className='form' onSubmit={handleSubmit}>
+                    <input type='text' required/>
+                    <button type='submit'>🔍search</button>
+                </form>
+                <div className='linkContainer'>
+                    <div><Link className='link' onClick={handleClick} to='/lizards'>Lizards</Link></div>
+                    <div><Link className='link' onClick={handleClick} to='/plants'>Plants</Link></div>
+                    <div><Link className='link' onClick={handleClick} to='/hamburgers'>Hamburgers</Link></div>
+                    <div><Link className='link' onClick={handleClick} to='/towers'>Towers</Link></div>
+                </div>
+                <h2>{header}</h2>
+                <div className='imgContainer'>
                 {
-                    this.state.photos.map(item => {
+                    photos.map(item => {
                         return (
-                            <div className='imgDiv' key={item.id}>
-                                <img alt='img' src={item.src.original}/>
-                            </div>
+                                <div className='imgDiv' key={item.id}>
+                                    <img alt='img' src={item.src.original}/>
+                                </div>
                         )
                     })
                 }
+                </div>
             <Routes>
-                <Route exact path='/' element={<this.Snapshot/>}/>
-                <Route path='/lizards' element={<this.Lizards/>}/>
-                <Route path='/plants' element={<this.Plants/>}/>
-                <Route path='/hamburgers' element={<this.Hamburgers/>}/>
-                <Route path='/towers' element={<this.Towers/>}/>
+                <Route exact path='/'/>
+                <Route path='/lizards'/>
+                <Route path='/plants'/>
+                <Route path='/hamburgers'/>
+                <Route path='/towers'/>
             </Routes>
             </div>
         </>
         );
 
     }
-}
 
 export default Gallery;
