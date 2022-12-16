@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Child from './components/Child';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Child icon={'☝'} label={'Points'} number={'62,500'}/>
+      <Child icon={'🎩'} label={'Hats'} number={'32,400'}/>
+      <Child icon={'🔥'} label={'Campfires'} number={'76,800'}/>
+      <Child icon={'💺'} label={'Seats'} number={'90,300'}/>
+      <Child icon={'🦇'} label={'Bats'} number={'22,100'}/>
+      <Child icon={'🖁'} label={'Phones'} number={'58,200'}/>
     </div>
   );
 }
