@@ -28,7 +28,7 @@ const Header = () => {
         </div>
 
         <Routes>
-            <Route exact path='/'/>
+            <Route exact path='/' element={<Weather/>}/>
             <Route path='/home' element={<Weather/>}/>
             <Route path='/favorites' element={<Favorites/>}/>
         </Routes>

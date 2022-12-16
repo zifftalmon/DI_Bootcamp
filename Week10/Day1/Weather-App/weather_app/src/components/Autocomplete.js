@@ -15,14 +15,14 @@ const Autocomplete = (props) => {
     const {setCity, setCityKey, setCountry} = useContext(AppContext)
 
     const getSuggestions = (value) => {
-        // fetch(`${BASE_URL}/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${value}`)
-        // .then(res => res.json())
-        // .then(data => {
-        //     setSeuggestions(data)
-        // })
-        // .catch(err => {
-        //     console.log(err);
-        // })
+        fetch(`${BASE_URL}/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${value}`)
+        .then(res => res.json())
+        .then(data => {
+            setSeuggestions(data)
+        })
+        .catch(err => {
+            console.log(err);
+        })
         setSeuggestions(cities)
     }
     

@@ -74,6 +74,8 @@ body {
 .cityWeather {
     position: relative;
     bottom: 1em;
+    text-align: left;
+    line-height: 1.5;
     display: flex;
     align-items: center;
 }
