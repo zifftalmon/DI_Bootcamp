@@ -8,7 +8,6 @@ class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            id:''
         }
     }
     render() {
@@ -23,7 +22,7 @@ class Home extends Component {
                             <div className='post' key={item.id}>
                                 <img alt='blog-img' src={blog}/>
                                 <div style={{textAlign:'left'}}>
-                                    <h2><Link onClick={this.handleClick} to={`/post_${item.id}`}>{item.title}</Link></h2>
+                                    <h2><Link to={`/post_${item.id}`}>{item.title}</Link></h2>
                                     <p>{item.body}</p>
                                 </div>
                             </div>
@@ -33,10 +32,10 @@ class Home extends Component {
                 }
             </div>
         <Routes>
-            <Route exact path='/home/post_/*'/>
-            <Route path='/post_1' element={<Post title={this.props.posts[0].title} body={this.props.posts[0].body}/>}/>
-            <Route path='/post_2' element={<Post title={this.props.posts[1].title} body={this.props.posts[1].body}/>}/>
-            <Route path='/post_3' element={<Post title={this.props.posts[2].title} body={this.props.posts[2].body}/>}/>
+            <Route exact path='/post_*'/>
+            <Route path='/post_1' element={<Post title={this.props.posts[0].title} body={this.props.posts[0].body} id={this.props.posts[0].id}/>}/>
+            <Route path='/post_2' element={<Post title={this.props.posts[1].title} body={this.props.posts[1].body} id={this.props.posts[1].id}/>}/>
+            <Route path='/post_3' element={<Post title={this.props.posts[2].title} body={this.props.posts[2].body} id={this.props.posts[2].id}/>}/>
         </Routes>
         </>
         );
