@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import {BrowserRouter, Routes, Route  } from 'react-router-dom'
 // import Post from './components/Post';
 import './style.css'
+import Post from './components/Post';
 
 
 function App(props) {
@@ -13,15 +14,14 @@ function App(props) {
     <BrowserRouter>
       <div className="App">
         <Navbar/>
-      </div>
-
       <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route path='/home/*' element={<Home/>}/>
+        <Route exact path='/*' element={<Home/>}/>
+        <Route path='/home/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route psth='/post_/*'/>
+        <Route path='/post_id'element={<Post/>}/>
       </Routes>
+      </div>
     </BrowserRouter>
     
   );

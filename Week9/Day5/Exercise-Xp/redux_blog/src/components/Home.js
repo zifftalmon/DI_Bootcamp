@@ -32,10 +32,10 @@ class Home extends Component {
                 }
             </div>
         <Routes>
-            <Route exact path='/post_*'/>
-            <Route path='/post_1' element={<Post title={this.props.posts[0].title} body={this.props.posts[0].body} id={this.props.posts[0].id}/>}/>
-            <Route path='/post_2' element={<Post title={this.props.posts[1].title} body={this.props.posts[1].body} id={this.props.posts[1].id}/>}/>
-            <Route path='/post_3' element={<Post title={this.props.posts[2].title} body={this.props.posts[2].body} id={this.props.posts[2].id}/>}/>
+            {/* <Route exact path='/post_/*'/> */}
+            <Route path='/post_1' element={<Post title={this.props.posts[0].title} body={this.props.posts[0].body} id={0}/>}/>
+            <Route path='/post_2' element={<Post title={this.props.posts[1].title} body={this.props.posts[1].body} id={1}/>}/>
+            <Route path='/post_3' element={<Post title={this.props.posts[2].title} body={this.props.posts[2].body} id={2}/>}/>
         </Routes>
         </>
         );
