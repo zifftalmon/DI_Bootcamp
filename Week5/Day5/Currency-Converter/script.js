@@ -30,7 +30,6 @@ const resultDiv = document.getElementById("result");
 
 function getCurrnecy(e) {
     e.preventDefault();
-    console.log(number.value);
     resultCurrnecy();
     
     async function resultCurrnecy () {
