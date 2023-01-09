@@ -51,45 +51,23 @@ to create one function in the global scope, utilize it in the bmi propertey of b
 comparison function
 */
 
-// Using the .toString() method convert the array to a string.
-// Using the .join()method convert the array to a string. Try passing different values into the join.
-// Eg .join(“+”), .join(” “), .join(“”)
-// Bonus : To do this Bonus look up how to work with nested for loops
-// Sort the numbers array in descending order, do so using for loops (Not using built-in sort methods).
-// The output should be: [9,8,7,6,5,4,3,2,1,0]
-// Hint: The algorithm is called “Bubble Sort”
-// Use a temporary variable to swap values in the array.
-// Use 2 “nested” for loops (Nested means one inside the other).
-// Add comments and console.log the result for each step, this will help you understand.
-// Requirement: Don’t copy paste solutions from Google
+const grades = [16,18,86,90,85];
 
+const gradesLength = grades.length
 
-
-
-const numbers = [5,0,9,1,7,4,2,6,3,8].join(" ");
-
-let numberStr = numbers.toString();
-
-console.log(numbers);
-
-console.log(numberStr)
-
-let x;
-
-function sorter () {
-
-for (let i = 0; i < numbers.length; i++) {
-    for(let j = i+1; j < numbers.length; j++) {
-        if (numbers[i] < numbers[j]) {
-            x = numbers[i];
-            numbers[i] = numbers[j];
-            numbers[j] = x;
-            console.log(numbers[j]);
-        }
-
+const result = 0
+const calculateAverage = () => {
+    const sum = (list = grades) =>
+        list.reduce((accumulator, currentValue) => accumulator + currentValue,
+        result)
+    
+    const aver = (list = grades,length = gradesLength) => list / length
+    
+    if(aver(sum(grades),gradesLength) > 65) {
+        console.log('you passed');
+    } else {
+        console.log('you did not pass');
     }
 }
-return numbers;
-}
-const newArr = sorter(numbers)
-console.log(numbers);
+
+console.log(calculateAverage());
