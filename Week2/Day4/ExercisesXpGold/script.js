@@ -39,12 +39,9 @@
 const numbers = [[3, 4], [8, 3, 2], [3], [9, 3], [5, 3], [4, 3]]
 
 const isOmniPresent = (arr,tester) => {
-    const array = arr.map(item => {
-        return item
+    arr.every(item => {
+        console.log(item.includes(tester))
     })
-console.log(array.every(num => {
-        num.includes(tester)
-    }))
 }
 
 isOmniPresent(numbers,3)
