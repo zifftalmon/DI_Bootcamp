@@ -49,3 +49,14 @@
 // }
 
 // biggestNumber([1,2,'r',5])
+
+//exercise 5
+
+const newList = (arr) => {
+    const filter = arr.filter((item,index,array)=> {
+        return array.indexOf(item) === index
+    })
+    console.log(filter);
+}
+
+newList(['a','a','b','b','c','c','d','d'])
