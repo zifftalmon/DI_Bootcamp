@@ -1,18 +1,16 @@
 const sum = document.getElementById('sum')
-const numArr = []
+const resultArr = []
+let numArr = []
 let numArr1 = []
-const numArr2 = []
 const oprArr = []
 
 const number = (num) => {
     numArr1.push(num)
-    sum.value = numArr1.join('')
     if(numArr1 !== []) {
         numArr.push([...numArr1])
         sum.value = numArr.join('')
         numArr1 = []
     }
-    numArr2.push(num)
 }
 
 const operator = (opr) => {
@@ -22,16 +20,14 @@ const operator = (opr) => {
         oprArr.pop()
         oprArr.push(opr)
     }
-    sum.value += opr
-    if(sum.value.includes(opr)) {
-        sum.value += numArr2.join('')
-    }
+    numArr.push(...oprArr)
+    sum.value += oprArr
+    sum.value += numArr1
 }
-console.log(sum.value);
-
 
 const equal = () => {
     const result = eval(sum.value)
+    numArr = [result]
     sum.value = result
 }
 
