@@ -5,3 +5,19 @@
 .App {
   text-align: center;
 }
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  align-items: baseline;
+  justify-items: center;
+}
+.book-card{
+  width: 13em;
+  text-align: left;
+}
+.book-img {
+  box-shadow: -1px 0px 60px 6px rgba(0,0,0,0.20);
+  width: 150px;
+  height: 250px;
+}

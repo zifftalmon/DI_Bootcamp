@@ -1,9 +1,10 @@
 const Card = (props) => {
     return(
-        <div>
-            <img alt='book-cover' src={props.img}/>
-            <h1>{props.title}</h1>
-            <h2>{props.author}</h2>
+        <div className="book-card">
+            <img className="book-img" alt='book-cover' src={props.img}/>
+            <h4>{props.title}</h4>
+            <h5>{props.author}</h5>
+            <h6>published:{props.date}</h6>
         </div>
     )
 }
